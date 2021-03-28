@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
+heroImage: img/counterapi-logo.svg
 tagline: Documentation of Counter API
 actionText: Get Started →
 actionLink: /guide/get-started

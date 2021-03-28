@@ -1,7 +1,7 @@
 const { description } = require("../../package");
 
 module.exports = {
-  title: "Count API",
+  title: "Counter API",
   description: description,
 
   head: [
@@ -26,6 +26,7 @@ module.exports = {
     docsDir: "",
     editLinkText: "",
     lastUpdated: false,
+    logo: "/img/counterapi-logo.svg",
     nav: [
       {
         text: "Guide",
