@@ -4,10 +4,10 @@ metadata:
   name: counterapi-docs
   namespace: argocd
 spec:
-  project: counterapi
+  project: default
   source:
     repoURL: git@github.com:counterapi/docs.git
-    targetRevision: production
+    targetRevision: master
     path: kubernetes/application
     directory:
       recurse: true

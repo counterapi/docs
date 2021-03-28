@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: docs
+  name: counterapi-docs
   labels:
-    app: docs
+    app: counterapi-docs
 spec:
   replicas: 1
   revisionHistoryLimit: 1
   selector:
     matchLabels:
-      app: docs
+      app: counterapi-docs
   template:
     metadata:
       labels:
-        app: docs
+        app: counterapi-docs
     spec:
       containers:
-        - name: docs
+        - name: counterapi-docs
           image: ghcr.io/counterapi/docs:v0.3.0
           imagePullPolicy: Always
           resources:
