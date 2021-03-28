@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: counterapi-docs
+  namespace: argocd
+spec:
+  project: counterapi
+  source:
+    repoURL: git@github.com:counterapi/docs.git
+    targetRevision: production
+    path: kubernetes/application
+    directory:
+      recurse: true
+  destination:
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false

@@ -1,5 +1,5 @@
 {
-  "name": "counterapi-docs",
+  "name": "docs",
   "version": "0.0.1",
   "description": "Documentation of Counter API",
   "main": "index.js",

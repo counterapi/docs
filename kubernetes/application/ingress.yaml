@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: docs-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/server-snippet: |
+      gzip            on;
+      gzip_types      text/plain application/xml text/css application/javascript;
+      gzip_min_length 1000;
+spec:
+  tls:
+    - hosts:
+        - counterapi.dev
+      secretName: counterapi-dev-cloudflare-tls
+  rules:
+    - host: counterapi.dev
+      http:
+        paths:
+          - backend:
+              serviceName: docs
+              servicePort: 80
