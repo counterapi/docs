@@ -12,3 +12,4 @@ config.local.js
 basement_dist
 .idea
 yarn.lock
+src/.vuepress/dist
