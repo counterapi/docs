@@ -15,11 +15,9 @@ spec:
       labels:
         app: docs
     spec:
-      imagePullSecrets:
-        - name: registry-secret
       containers:
         - name: docs
-          image: rg.fr-par.scw.cloud/crawly-app/docs:0.0.4
+          image: ghcr.io/counterapi/docs:v0.3.0
           imagePullPolicy: Always
           resources:
             limits:
@@ -30,6 +28,3 @@ spec:
               memory: 50Mi
           ports:
             - containerPort: 80
-          env:
-            - name: ENVIRONMENT
-              value: "production"
