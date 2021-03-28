@@ -1,0 +1,14 @@
+@import "~bulma/sass/utilities/_all";
+@import "./variables/buefy";
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+pre {
+  .number {
+    background-color: inherit;
+    font-size: inherit;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+  }
+}
