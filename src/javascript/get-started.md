@@ -2,13 +2,16 @@
 
 ## Prerequisites
 
-Counter API is a REST API to help developers to keep their count data online.
-It is design to use in static applications where you do not have backend to store your data.
+Counter API is a REST API to help developers to keep their count data online. It is design to use in static applications
+where you do not have backend to store your data.
 
 - [Node.js 10+](https://nodejs.org/en/)
 - [Yarn Classic](https://classic.yarnpkg.com/en/) (Optional)\*
 
-\* _If your project is using webpack 3.x, you may notice some installation issues with npm. In this case, we recommend using Yarn._
+<br/>
+
+* _If your project is using webpack 3.x, you may notice some installation issues with npm. In this case, we recommend
+  using Yarn._
 
 ## Quick Start
 

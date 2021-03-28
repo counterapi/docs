@@ -1,6 +1,4 @@
-# Counter Name
-
-## Counter Name Considerations
+# Counter Name Hashing
 
 Counter name is unique. However, anyone who knows the name can count up or down. Also, the counter name can be
 only `100` character long and `alphanumeric`.

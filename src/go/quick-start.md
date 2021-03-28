@@ -1,16 +1,29 @@
-# Quick Start
+# Quick Start with CLI
 
-## Import and Usage
+Count API CLI is a standalone tool which enables you to count up/down, get counter information or list history of the
+counter.
 
-`counterapi` is totally compatible both `Typescript` and `JavaScript`. Just import it in your project and start to
-count!
-
+<br/>
 It does not require authentication or login.
 
-```typescript
-import {CounterAPI} from "counterapi";
+```shell
+CLI command to counter things
 
-const counter = new CounterAPI();
+Usage:
+  counter [command]
+
+Available Commands:
+  counts      Fetches counts of counter
+  down        Count down for given name
+  get         Fetches counter information
+  help        Help about any command
+  up          Count up for given name
+  version     Print the version/build number
+
+Flags:
+  -h, --help   help for counter
+
+Use "counter [command] --help" for more information about a command.
 ```
 
 ## Count Up
@@ -18,32 +31,41 @@ const counter = new CounterAPI();
 You can count up with given name. The name of the counter is unique. Do not forget that anyone with same name can count
 up or down.
 
-```typescript
-import {CounterAPI} from "counterapi";
-
-const counter = new CounterAPI();
-
-counter.up("MyCounter01")
+```shell
+❯ counter up --name MyCounter01                  
+{
+        "id": 12,
+        "name": "MyCounter01",
+        "count": 1,
+        "created_at": "2021-03-28T21:19:09.450461117Z",
+        "updated_at": "2021-03-28T21:19:09.466029457Z"
+}
 ```
 
 ## Count Down
 
-```typescript
-import {CounterAPI} from "counterapi";
-
-const counter = new CounterAPI();
-
-counter.down("MyCounter01")
+```shell
+❯ counter down --name MyCounter01
+{
+    "id": 12,
+    "name": "MyCounter01",
+    "count": 0,
+    "created_at": "2021-03-28T21:19:09.450461117Z",
+    "updated_at": "2021-03-28T21:19:09.466029457Z"
+}
 ```
 
-## Get Count Number
+## Get Counter
 
 After counting up/down, you can get the final status of your counter with `get` function.
 
-```typescript
-import {CounterAPI} from "counterapi";
-
-const counter = new CounterAPI();
-
-counter.get("MyCounter01")
+```shell
+❯ counter get --name MyCounter01
+{
+    "id": 12,
+    "name": "MyCounter01",
+    "count": 0,
+    "created_at": "2021-03-28T21:19:09.450461117Z",
+    "updated_at": "2021-03-28T21:19:09.466029457Z"
+}
 ```

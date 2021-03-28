@@ -1,11 +1,12 @@
 # Quick Start
 
-## Import and Usage
-
 `counterapi` is totally compatible both `Typescript` and `JavaScript`. Just import it in your project and start to
 count!
 
-It does not require authentication or login.
+<br/>
+
+It does not require authentication or login. Only obligation is the rate limit. The API is limited to `2`
+request/second per IP.
 
 ```typescript
 import {CounterAPI} from "counterapi";

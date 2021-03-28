@@ -1,7 +1,5 @@
 # Endpoints
 
-## Browser API Endpoints
-
 Counter API does not have any authentication. You do not need any token, or a password to use it. The API address
 is [https://api.counterapi.dev/v1](https://api.counterapi.dev/v1)
 
@@ -72,7 +70,7 @@ You can get count list with given counter name. The endpoint is `https://api.cou
 name | required | description
 --- | --- | ---
 `name`| true | Counter name
-`group_by`| true | Grouping the results by given time interval. e.g. `hour`, `day`, `month`, `year`.
+`group_by`| true | Grouping the results by given time interval. e.g. `hour`, `day`, `week`, `month`, `year`.
 `order_by`| no | Ordering the results. e.g. `asc`, `desc`.
 
 ### Test

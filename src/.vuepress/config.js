@@ -81,7 +81,8 @@ module.exports = {
           "/javascript/",
           "/javascript/get-started",
           "/javascript/quick-start",
-          "/javascript/counter-name",
+          "/javascript/counter-name-hashing",
+          "/javascript/count-list",
         ],
       },
       {
@@ -101,7 +102,7 @@ module.exports = {
         path: "/api/",
         collapsable: false,
         sidebarDepth: 1,
-        children: ["/api/", "/api/endpoints"],
+        children: ["/api/", "/api/rate-limit", "/api/endpoints"],
       },
     ],
   },

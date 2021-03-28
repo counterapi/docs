@@ -1,4 +1,5 @@
 # Introduction
 
-Counter API is a REST API to help developers to keep their count data online.
-It is design to use in static applications where you do not have backend to store your data.
+Counter API is a REST API to help developers to keep their count data online. It has Go library and CLI to make it
+available for different platforms.
+
