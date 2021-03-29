@@ -10,18 +10,23 @@
   "repository": "https://github.com/counterapi/docs.git/counterapi-docs",
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "build": "vuepress build src",
+    "postbuild": "vuepress-sitemap --hostname https://counterapi.dev -d src/.vuepress/dist"
   },
   "license": "MIT",
   "devDependencies": {
     "axios": "^0.21.1",
     "buefy": "^0.9.4",
+    "esm": "^3.2.25",
     "node-sass": "^5.0.0",
     "prettier": "^2.2.1",
     "sass-loader": "10.1.1",
     "typescript": "^4.2.3",
     "vuepress": "^1.8.2",
+    "vuepress-plugin-seo": "^0.1.4",
+    "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-plugin-typescript": "^0.3.1",
     "vuepress-theme-api": "^1.0.0-beta.9"
-  }
+  },
+  "dependencies": {}
 }

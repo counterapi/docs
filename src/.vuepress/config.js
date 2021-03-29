@@ -48,12 +48,13 @@ module.exports = {
     },
   },
   themeConfig: {
-    repo: "",
+    repo: "https://github.com/counterapi/docs",
     editLinks: false,
     docsDir: "",
     editLinkText: "",
     lastUpdated: false,
     logo: "/img/counterapi-logo.svg",
+    author: "omegion",
     nav: [
       {
         text: "Guide",
@@ -74,7 +75,7 @@ module.exports = {
         path: "/guide/",
         collapsable: false,
         sidebarDepth: 1, // optional, defaults to 1
-        children: ["/guide/", "/guide/get-started", "/guide/configuration"],
+        children: ["/guide/", "/guide/get-started"],
       },
       {
         title: "Javascript",
@@ -118,5 +119,34 @@ module.exports = {
     "vuepress-plugin-typescript",
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
+    "sitemap",
+    {
+      hostname: "https://counterapi.dev",
+      outFile: "src/.vuepress/dist/sitemap.xml",
+    },
+    "seo",
+    {
+      siteTitle: (_, $site) => $site.title,
+      title: ($page) => $page.title,
+      description: ($page) => $page.frontmatter.description,
+      author: (_, $site) => $site.themeConfig.author,
+      tags: ($page) => $page.frontmatter.tags,
+      twitterCard: (_) => "summary_large_image",
+      type: ($page) =>
+        ["articles", "posts", "blog"].some((folder) =>
+          $page.regularPath.startsWith("/" + folder)
+        )
+          ? "article"
+          : "website",
+      url: (_, $site, path) => ($site.themeConfig.domain || "") + path,
+      image: ($page, $site) =>
+        $page.frontmatter.image &&
+        (($site.themeConfig.domain &&
+          !$page.frontmatter.image.startsWith("http")) ||
+          "") + $page.frontmatter.image,
+      publishedAt: ($page) =>
+        $page.frontmatter.date && new Date($page.frontmatter.date),
+      modifiedAt: ($page) => $page.lastUpdated && new Date($page.lastUpdated),
+    },
   ],
 };
