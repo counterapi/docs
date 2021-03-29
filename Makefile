@@ -1,10 +1,6 @@
 K8S_DEPLOYMENT_FILE  = kubernetes/application/deployment.yaml
 IMAGE_NAME  = ghcr.io/counterapi/docs
 
-.PHONY: latest-tag
-latest-tag:
-	git describe --abbrev=0 --tags
-
 .PHONY: cut-tag
 cut-tag:
 	@echo "Commit $(version)"
