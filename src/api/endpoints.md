@@ -43,6 +43,25 @@ curl -X GET https://api.counterapi.dev/v1/down?name=APITest
 
 <APIRun type="down" />
 
+## Set Counter
+
+You can set counter with given counter name and count number. The endpoint is `https://api.counterapi.dev/v1/set`.
+
+### Parameters
+
+name | required | description
+--- | --- | ---
+`name`| true | Counter name
+`count`| true | Count number
+
+### Test
+
+```shell
+curl -X GET https://api.counterapi.dev/v1/set?name=APITest&count=10
+```
+
+<APIRun type="set" />
+
 ## Counter Get
 
 You can count get with given counter name. The endpoint is `https://api.counterapi.dev/v1/get`.

@@ -62,6 +62,11 @@ export default {
           return {
             name: "APITest",
           };
+        case "set":
+          return {
+            name: "APITest",
+            count: 10,
+          };
         case "counts/":
           return {
             name: "APITest",

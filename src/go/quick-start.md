@@ -55,6 +55,19 @@ up or down.
 }
 ```
 
+## Set Count
+
+```shell
+❯ counter set --name MyCounter01 --count 10
+{
+    "id": 12,
+    "name": "MyCounter01",
+    "count": 10,
+    "created_at": "2021-03-28T21:19:09.450461117Z",
+    "updated_at": "2021-03-28T21:19:09.466029457Z"
+}
+```
+
 ## Get Counter
 
 After counting up/down, you can get the final status of your counter with `get` function.
