@@ -17,6 +17,7 @@ Available Commands:
   down        Count down for given name
   get         Fetches counter information
   help        Help about any command
+  set         Sets counter
   up          Count up for given name
   version     Print the version/build number
 
@@ -56,6 +57,8 @@ up or down.
 ```
 
 ## Set Count
+
+You can set your counter to with `set` function.
 
 ```shell
 ❯ counter set --name MyCounter01 --count 10
