@@ -48,7 +48,7 @@ module.exports = {
     },
   },
   themeConfig: {
-    repo: "https://github.com/counterapi/docs",
+    repo: "https://github.com/counterapi",
     editLinks: false,
     docsDir: "",
     editLinkText: "",
@@ -63,10 +63,6 @@ module.exports = {
       {
         text: "API",
         link: "/api/",
-      },
-      {
-        text: "GitHub",
-        link: "https://github.com/counterapi",
       },
     ],
     sidebar: [
