@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: counterapi-docs
-          image: ghcr.io/counterapi/docs:v0.10.0
+          image: ghcr.io/counterapi/docs:v0.11.0
           imagePullPolicy: Always
           resources:
             limits:
