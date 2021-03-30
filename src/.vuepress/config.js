@@ -47,6 +47,7 @@ module.exports = {
       },
     },
   },
+  dest: "docs",
   themeConfig: {
     repo: "https://github.com/counterapi",
     editLinks: false,
