@@ -119,7 +119,7 @@ module.exports = {
     "sitemap",
     {
       hostname: "https://counterapi.dev",
-      outFile: "src/.vuepress/dist/sitemap.xml",
+      outFile: "docs/sitemap.xml",
     },
     "seo",
     {
