@@ -15,8 +15,8 @@
 Check out our docs at https://counterapi.dev/.
 
 ```bash
-yarn install # install all dependencies
-yarn dev  # serves VuePress' own docs with itself
+pnpm install # install all dependencies
+pnpm dev  # serves VuePress' own docs with itself
 ```
 
 ## License
