@@ -30,8 +30,8 @@ devDependencies:
     specifier: ^1.8.2
     version: 1.9.10(prettier@2.8.8)
   vuepress-plugin-seo:
-    specifier: ^0.1.4
-    version: 0.1.4
+    specifier: ^0.2.0
+    version: 0.2.0
   vuepress-plugin-sitemap:
     specifier: ^2.3.1
     version: 2.3.1(chalk@2.4.2)(commander@2.20.3)(esm@3.2.25)
@@ -9875,8 +9875,8 @@ packages:
       lodash: 4.17.21
     dev: true
 
-  /vuepress-plugin-seo@0.1.4:
-    resolution: {integrity: sha512-foNKrAAKihiC47bx0UXFzs/+BIFmnowTQsLVF/8pfsnsPDp8FXjkTGyjxyjOhbwj7ADPv32CdX3pEoYGnZ7OjA==}
+  /vuepress-plugin-seo@0.2.0:
+    resolution: {integrity: sha512-/Rqul20UTL30mZyCbNwkfAfP50Yr7jzWlavQ92OVzZ8PcpZGXoDc+eoKQyKLQKL3G96dqvuCCbIMbW7RRs7Bhw==}
     dev: true
 
   /vuepress-plugin-sitemap@2.3.1(chalk@2.4.2)(commander@2.20.3)(esm@3.2.25):
