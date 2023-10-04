@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  .logo {
+    height: 1.9rem !important;
+    margin-right: .2rem !important;
+  }
+}

@@ -4,12 +4,13 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { searchPlugin } from '@vuepress/plugin-search'
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 import { nprogressPlugin } from '@vuepress/plugin-nprogress'
-import { containerPlugin } from '@vuepress/plugin-container'
+import { viteBundler } from '@vuepress/bundler-vite'
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
 
 export default {
   title: "Counter API",
   description: description,
-
   head: [
     [
       "link",
@@ -45,14 +46,6 @@ export default {
       { name: "apple-mobile-web-app-status-bar-style", content: "black" },
     ],
   ],
-  sassOptions: { indentedSyntax: true },
-  css: {
-    loaderOptions: {
-      sass: {
-        additionalData: `@import "~@/styles/main.scss"`,
-      },
-    },
-  },
   dest: "docs",
   theme: defaultTheme({
     repo: "https://github.com/counterapi",
@@ -112,7 +105,16 @@ export default {
       },
     ],
   }),
-
+  bundler: viteBundler({
+    viteOptions: {
+      css: {
+        postcss: {
+          plugins: [tailwindcss, autoprefixer],
+        },
+      },
+    },
+    vuePluginOptions: {},
+  }),
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
@@ -122,9 +124,6 @@ export default {
     }),
     backToTopPlugin(),
     nprogressPlugin(),
-    containerPlugin({
-      // options
-    }),
     // OLD ONES
     "@vuepress/plugin-medium-zoom",
     "sitemap",
