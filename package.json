@@ -18,7 +18,7 @@
     "axios": "^1.0.0",
     "buefy": "^0.9.4",
     "esm": "^3.2.25",
-    "node-sass": "^7.0.3",
+    "node-sass": "^9.0.0",
     "prettier": "^3.0.0",
     "sass-loader": "13.3.2",
     "typescript": "^5.0.0",
