@@ -12,4 +12,8 @@ config.local.js
 basement_dist
 .idea
 yarn.lock
+
+# Vuepress
 src/.vuepress/dist*
+.cache
+.temp

@@ -13,16 +13,19 @@ To use it, open up your terminal in the desired directory and run the following 
 
 <br/>
 
-<code-group>
-<code-block title="YARN">
+<CodeGroup>
+<CodeGroupItem title="YARN">
+
 ```bash
 yarn add counterapi
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="NPM">
+<CodeGroupItem title="NPM">
+
 ```bash
 npm install counterapi
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
+

@@ -1,9 +1,15 @@
 const { description } = require("../../package");
 
-module.exports = {
+import { defaultTheme } from '@vuepress/theme-default'
+import { searchPlugin } from '@vuepress/plugin-search'
+import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
+import { nprogressPlugin } from '@vuepress/plugin-nprogress'
+import { viteBundler } from '@vuepress/bundler-vite'
+import tailwindcss from 'tailwindcss'
+
+export default {
   title: "Counter API",
   description: description,
-
   head: [
     [
       "link",
@@ -39,24 +45,14 @@ module.exports = {
       { name: "apple-mobile-web-app-status-bar-style", content: "black" },
     ],
   ],
-  sassOptions: { indentedSyntax: true },
-  css: {
-    loaderOptions: {
-      sass: {
-        additionalData: `@import "~@/styles/main.scss"`,
-      },
-    },
-  },
   dest: "docs",
-  themeConfig: {
+  theme: defaultTheme({
     repo: "https://github.com/counterapi",
     editLinks: false,
     docsDir: "",
-    editLinkText: "",
     lastUpdated: false,
     logo: "/img/counterapi-logo.svg",
-    author: "omegion",
-    nav: [
+    navbar: [
       {
         text: "Guide",
         link: "/guide/",
@@ -68,15 +64,15 @@ module.exports = {
     ],
     sidebar: [
       {
-        title: "Guide",
-        path: "/guide/",
+        text: "Guide",
+        link: "/guide/",
         collapsable: false,
         sidebarDepth: 1, // optional, defaults to 1
         children: ["/guide/", "/guide/get-started"],
       },
       {
-        title: "Javascript",
-        path: "/javascript/",
+        text: "Javascript",
+        link: "/javascript/",
         collapsable: false,
         sidebarDepth: 1,
         children: [
@@ -88,8 +84,8 @@ module.exports = {
         ],
       },
       {
-        title: "Go",
-        path: "/go/",
+        text: "Go",
+        link: "/go/",
         collapsable: false,
         sidebarDepth: 1,
         children: [
@@ -100,21 +96,34 @@ module.exports = {
         ],
       },
       {
-        title: "API",
-        path: "/api/",
+        text: "API",
+        link: "/api/",
         collapsable: false,
         sidebarDepth: 1,
         children: ["/api/", "/api/rate-limit", "/api/endpoints"],
       },
     ],
-  },
-
+  }),
+  bundler: viteBundler({
+    viteOptions: {
+      css: {
+        postcss: {
+          plugins: [tailwindcss],
+        },
+      },
+    },
+    vuePluginOptions: {},
+  }),
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
-    "vuepress-plugin-typescript",
-    "@vuepress/plugin-back-to-top",
+    searchPlugin({
+      // options
+    }),
+    backToTopPlugin(),
+    nprogressPlugin(),
+    // OLD ONES
     "@vuepress/plugin-medium-zoom",
     "sitemap",
     {

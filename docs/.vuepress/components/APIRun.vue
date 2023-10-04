@@ -1,16 +1,26 @@
 <template>
   <section>
-    <div class="columns is-multiline">
-      <div class="column is-12">
-        <b-button
-          :loading="loading"
-          class="is-pulled-right is-primary"
-          @click="run"
-          >Run →
-        </b-button>
+    <div class="columns-1">
+      <div class="w-full">
+        <Button
+            size="md"
+            color="default"
+            :loading="loading"
+            @click="run"
+            class="float-right"
+        >
+          Run
+          <template #suffix>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+          </template>
+        </Button>
       </div>
-      <div v-if="result" class="column is-12 pt-0">
-        <p class="subtitle mb-0">Result</p>
+      <div v-if="result" class="w-full bg-blue-50 dark:bg-slate-700 rounded-md border-1 border-blue-800 sm p-3 mt-3">
+        <p class="text-lg font-semibold mb-0">Result</p>
         <pre class="has-background-white-ter">{{ result }}</pre>
       </div>
     </div>
@@ -18,7 +28,8 @@
 </template>
 
 <script>
-let axios = require("axios");
+import axios from "axios";
+import { Button,  } from 'flowbite-vue'
 
 const BASE_URL = "https://api.counterapi.dev/v1/";
 
@@ -35,11 +46,14 @@ export const apiConfig = {
   },
 };
 
-axios = axios.create(apiConfig);
+let axiosInstance = axios.create(apiConfig);
 
 export default {
   props: {
     type: String,
+  },
+  components: {
+    Button,
   },
   data() {
     return {
@@ -78,8 +92,8 @@ export default {
       let that = this;
       this.loading = true;
       const query = this.getQueryFromType();
-      axios
-        .get(this.type, {
+      axiosInstance
+        .get(`test/test/${this.type}`, {
           params: query,
         })
         .then(function (response) {
@@ -89,7 +103,7 @@ export default {
           this.loading = false;
           setTimeout(function () {
             that.result = null;
-          }, 8000);
+          }, 20000);
         });
     },
   },

@@ -19,16 +19,18 @@ The fastest way to get Counter API for your project, install it with `yarn` or `
 
 To use it, open up your terminal in the desired directory and run the following command:
 
-<code-group>
-<code-block title="YARN">
+<CodeGroup>
+<CodeGroupItem title="YARN">
+
 ```bash
 yarn add counterapi
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="NPM">
+<CodeGroupItem title="NPM">
+
 ```bash
 npm install counterapi
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
