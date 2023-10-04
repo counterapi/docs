@@ -2,8 +2,13 @@
 home: true
 heroImage: img/counterapi-logo.svg
 tagline: Documentation of Counter API
-actionText: Get Started →
-actionLink: /guide/get-started
+actions:
+  - text: Get Started →
+    link: /guide/get-started.html
+    type: primary
+  - text: Test API Endpoints
+    link: /api/endpoints
+    type: secondary
 features:
 - title: Free Unlimited API
   details: Counter API is free to use with unlimited features.
@@ -13,3 +18,4 @@ features:
   details: Very basic and powerful REST API backed with Go.
 footer: Made by omegion with ❤️
 ---
+
