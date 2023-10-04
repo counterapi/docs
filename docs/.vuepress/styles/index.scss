@@ -8,3 +8,29 @@
     margin-right: .2rem !important;
   }
 }
+
+.theme-default-content {
+  h1 {
+    @apply text-4xl font-semibold;
+  }
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+  h3 {
+    @apply text-xl font-semibold;
+  }
+}
+
+.home .hero {
+  img {
+    @apply w-56;
+  }
+}
+
+.home .footer {
+  @apply fixed w-full bottom-0 right-0;
+}
+
+.navbar a {
+  @apply flex;
+}

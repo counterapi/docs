@@ -6,7 +6,6 @@ import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 import { nprogressPlugin } from '@vuepress/plugin-nprogress'
 import { viteBundler } from '@vuepress/bundler-vite'
 import tailwindcss from 'tailwindcss'
-import autoprefixer from 'autoprefixer'
 
 export default {
   title: "Counter API",
@@ -109,7 +108,7 @@ export default {
     viteOptions: {
       css: {
         postcss: {
-          plugins: [tailwindcss, autoprefixer],
+          plugins: [tailwindcss],
         },
       },
     },

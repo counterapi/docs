@@ -1,51 +1,26 @@
 <template>
   <section>
-    <h1 class="font-sans text-teal">hello world</h1>
-    <div class="bg-gray-100 flex justify-center items-center h-screen">
-      <!-- Left: Image -->
-      <!-- Right: Login Form -->
-      <div class="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">
-        <h1 class="text-2xl font-semibold mb-4">Login</h1>
-        <form action="#" method="POST">
-          <!-- Username Input -->
-          <div class="mb-4">
-            <label for="username" class="block text-gray-600">Username</label>
-            <input type="text" id="username" name="username" class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500" autocomplete="off">
-          </div>
-          <!-- Password Input -->
-          <div class="mb-4">
-            <label for="password" class="block text-gray-600">Password</label>
-            <input type="password" id="password" name="password" class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500" autocomplete="off">
-          </div>
-          <!-- Remember Me Checkbox -->
-          <div class="mb-4 flex items-center">
-            <input type="checkbox" id="remember" name="remember" class="text-blue-500">
-            <label for="remember" class="text-gray-600 ml-2">Remember Me</label>
-          </div>
-          <!-- Forgot Password Link -->
-          <div class="mb-6 text-blue-500">
-            <a href="#" class="hover:underline">Forgot Password?</a>
-          </div>
-          <!-- Login Button -->
-          <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-md py-2 px-4 w-full">Login</button>
-        </form>
-        <!-- Sign up  Link -->
-        <div class="mt-6 text-blue-500 text-center">
-          <a href="#" class="hover:underline">Sign up Here</a>
-        </div>
+    <div class="columns-1">
+      <div class="w-full">
+        <Button
+            size="md"
+            color="default"
+            :loading="loading"
+            @click="run"
+            class="float-right"
+        >
+          Run
+          <template #suffix>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+          </template>
+        </Button>
       </div>
-    </div>
-    <div class="columns is-multiline">
-      <div class="column is-12">
-        <button
-          :loading="loading"
-          class="is-pulled-right is-primary"
-          @click="run"
-          >Run →
-        </button>
-      </div>
-      <div v-if="result" class="column is-12 pt-0">
-        <p class="subtitle mb-0">Result</p>
+      <div v-if="result" class="w-full bg-blue-50 dark:bg-slate-700 rounded-md border-1 border-blue-800 sm p-3 mt-3">
+        <p class="text-lg font-semibold mb-0">Result</p>
         <pre class="has-background-white-ter">{{ result }}</pre>
       </div>
     </div>
@@ -54,7 +29,7 @@
 
 <script>
 import axios from "axios";
-import "tailwindcss/tailwind.css"
+import { Button,  } from 'flowbite-vue'
 
 const BASE_URL = "https://api.counterapi.dev/v1/";
 
@@ -76,6 +51,9 @@ let axiosInstance = axios.create(apiConfig);
 export default {
   props: {
     type: String,
+  },
+  components: {
+    Button,
   },
   data() {
     return {
@@ -115,7 +93,7 @@ export default {
       this.loading = true;
       const query = this.getQueryFromType();
       axiosInstance
-        .get(this.type, {
+        .get(`test/test/${this.type}`, {
           params: query,
         })
         .then(function (response) {
@@ -125,12 +103,9 @@ export default {
           this.loading = false;
           setTimeout(function () {
             that.result = null;
-          }, 8000);
+          }, 20000);
         });
     },
   },
 };
 </script>
-
-<style lang="scss">
-</style>

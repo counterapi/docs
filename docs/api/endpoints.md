@@ -20,7 +20,7 @@ name | required | description
 ### Test
 
 ```shell
-curl -X GET https://api.counterapi.dev/v1/up?name=APITest
+curl -X GET https://api.counterapi.dev/v1/test/test/up
 ```
 
 <APIRun type="up" />
