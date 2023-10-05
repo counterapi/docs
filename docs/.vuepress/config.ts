@@ -5,6 +5,8 @@ import { searchPlugin } from '@vuepress/plugin-search'
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 import { nprogressPlugin } from '@vuepress/plugin-nprogress'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { sitemapPlugin } from "vuepress-plugin-sitemap2";
+import { seoPlugin } from "vuepress-plugin-seo2";
 import tailwindcss from 'tailwindcss'
 
 export default {
@@ -45,7 +47,7 @@ export default {
       { name: "apple-mobile-web-app-status-bar-style", content: "black" },
     ],
   ],
-  dest: "docs",
+  dest: "dist",
   theme: defaultTheme({
     repo: "https://github.com/counterapi",
     editLinks: false,
@@ -123,36 +125,17 @@ export default {
     }),
     backToTopPlugin(),
     nprogressPlugin(),
-    // OLD ONES
-    "@vuepress/plugin-medium-zoom",
-    "sitemap",
-    {
+    sitemapPlugin({
       hostname: "https://counterapi.dev",
-      outFile: "docs/sitemap.xml",
-    },
-    "seo",
-    {
-      siteTitle: (_, $site) => $site.title,
-      title: ($page) => $page.title,
-      description: ($page) => $page.frontmatter.description,
-      author: (_, $site) => $site.themeConfig.author,
-      tags: ($page) => $page.frontmatter.tags,
-      twitterCard: (_) => "summary_large_image",
-      type: ($page) =>
-        ["articles", "posts", "blog"].some((folder) =>
-          $page.regularPath.startsWith("/" + folder)
-        )
-          ? "article"
-          : "website",
-      url: (_, $site, path) => ($site.themeConfig.domain || "") + path,
-      image: ($page, $site) =>
-        $page.frontmatter.image &&
-        (($site.themeConfig.domain &&
-          !$page.frontmatter.image.startsWith("http")) ||
-          "") + $page.frontmatter.image,
-      publishedAt: ($page) =>
-        $page.frontmatter.date && new Date($page.frontmatter.date),
-      modifiedAt: ($page) => $page.lastUpdated && new Date($page.lastUpdated),
-    },
+    }),
+    seoPlugin({
+      hostname: "https://counterapi.dev",
+      autoDescription: true,
+      author: {
+        name: "Hakan",
+        url: "https://omegion.dev",
+        email: "hello@counterapi.dev"
+      }
+    }),
   ],
 };
