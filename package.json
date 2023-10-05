@@ -9,9 +9,9 @@
   },
   "repository": "https://github.com/counterapi/docs.git/counterapi-docs",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src",
-    "postbuild": "vuepress-sitemap --hostname https://counterapi.dev -d src"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "postbuild": "vuepress-sitemap --hostname https://counterapi.dev -d docs"
   },
   "license": "MIT",
   "devDependencies": {
