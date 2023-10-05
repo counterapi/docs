@@ -1,4 +1,4 @@
-name: Build
+name: Deploy
 
 on:
   push:
@@ -18,10 +18,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  Deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v4
