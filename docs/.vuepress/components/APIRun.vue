@@ -19,7 +19,7 @@
           </template>
         </Button>
       </div>
-      <div v-if="result" class="w-full bg-blue-50 dark:bg-slate-700 rounded-md border-1 border-blue-800 sm p-3 mt-3">
+      <div v-if="result" class="w-full bg-gray-100 dark:bg-gray-900 rounded-md border-1 border-blue-800 sm p-3 mt-3">
         <p class="text-lg font-semibold mb-0">Result</p>
         <pre class="has-background-white-ter">{{ result }}</pre>
       </div>
