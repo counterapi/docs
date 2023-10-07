@@ -12,6 +12,7 @@
     {
       "enabled": true,
       "automerge": true,
+      "automergeType": "branch",
       "matchUpdateTypes": [
         "major",
         "minor",
