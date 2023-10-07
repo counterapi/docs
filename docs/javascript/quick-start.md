@@ -19,12 +19,27 @@ const counter = new CounterAPI();
 You can count up with given name. The name of the counter is unique. Do not forget that anyone with same name can count
 up or down.
 
+
 ```typescript
 import {CounterAPI} from "counterapi";
 
 const counter = new CounterAPI();
 
-counter.up("MyCounter01")
+counter.up("test", "test").then((res) => {
+    console.log(res)
+})
+```
+
+Output
+
+```shell
+Counter {
+  ID: 1,
+  Name: 'test',
+  Count: 15,
+  UpdatedAt: '2023-03-27T13:33:51.315934+01:00',
+  CreatedAt: '2023-03-26T21:46:18.624369+08:00'
+}
 ```
 
 ## Count Down
@@ -34,19 +49,48 @@ import {CounterAPI} from "counterapi";
 
 const counter = new CounterAPI();
 
-counter.down("MyCounter01")
+counter.down("test", "test").then((res) => {
+    console.log(res)
+})
 ```
 
+Output
+
+```shell
+Counter {
+  ID: 1,
+  Name: 'test',
+  Count: 14,
+  UpdatedAt: '2023-03-27T13:33:51.315934+01:00',
+  CreatedAt: '2023-03-26T21:46:18.624369+08:00'
+}
+```
 ## Set Count
 
 You can set your counter to with `set` function.
+
+### Set by Name
 
 ```typescript
 import {CounterAPI} from "counterapi";
 
 const counter = new CounterAPI();
 
-counter.set("MyCounter01", 10)
+counter.set("test", "test", 10).then((res) => {
+    console.log(res)
+})
+```
+
+Output
+
+```shell
+Counter {
+  ID: 1,
+  Name: 'test',
+  Count: 10,
+  UpdatedAt: '2023-03-27T13:33:51.315934+01:00',
+  CreatedAt: '2023-03-26T21:46:18.624369+08:00'
+}
 ```
 
 ## Get Count Number
@@ -58,5 +102,49 @@ import {CounterAPI} from "counterapi";
 
 const counter = new CounterAPI();
 
-counter.get("MyCounter01")
+counter.get("test", "test").then((res) => {
+    console.log(res)
+})
+```
+
+Output
+
+```shell
+Counter {
+  ID: 1,
+  Name: 'test',
+  Count: 14,
+  UpdatedAt: '2023-03-27T13:33:51.315934+01:00',
+  CreatedAt: '2023-03-26T21:46:18.624369+08:00'
+}
+```
+
+
+## Get Count List by Name
+
+You can get the counts historically. Use `group_by` to group them, default `day`.
+
+```typescript
+import {CounterAPI, GroupByTypes, OrderByTypes} from "counterapi";
+
+const counter = new CounterAPI();
+
+const q = {
+    group_by: GroupByTypes.Day,
+    order_by: OrderByTypes.ASC,
+};
+
+counter.counts("test", "test", q).then((res) => {
+    console.log(res);
+});
+```
+
+Output
+
+```shell
+[
+  Count { Count: 2, Date: '2023-03-07T00:00:00+08:00' },
+  Count { Count: 14, Date: '2023-03-26T00:00:00+08:00' },
+  Count { Count: 40, Date: '2023-03-27T00:00:00+08:00' }
+]
 ```
