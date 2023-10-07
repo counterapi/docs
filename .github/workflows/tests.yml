@@ -1,23 +1,16 @@
-name: ci
+name: Tests
 
 on:
   push:
     branches:
-      - main
       - master
   pull_request:
     branches:
-      - main
       - master
 
 jobs:
   ci:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ ubuntu-latest ]
-        node: [ 14 ]
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout 🛎
@@ -26,7 +19,7 @@ jobs:
       - name: Setup node env 🏗
         uses: actions/setup-node@v3.8.1
         with:
-          node-version: ${{ matrix.node }}
+          node-version: 20
 
       - name: Get yarn cache directory path 🛠
         id: yarn-cache-dir-path
@@ -34,12 +27,12 @@ jobs:
 
       - name: Cache node_modules 📦
         uses: actions/cache@v3
-        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+        id: yarn-cache
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          key: yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-yarn-
+            yarn-
 
       - name: Install dependencies 👨🏻‍💻
         run: yarn
