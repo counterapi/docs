@@ -4,7 +4,7 @@ Although Counter API does not have any authentication or login, it does have rat
 
 ## Limit Per Request
 
-The API has rate limit per IP. It gathers IP address from the client. The limit is `2` requests per second for an IP.
+The API has rate limit per IP. It gathers IP address from the client. The limit is `10` requests per second for an IP.
 
 <br/>
 

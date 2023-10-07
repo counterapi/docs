@@ -73,6 +73,13 @@ export default {
         children: ["/guide/", "/guide/get-started"],
       },
       {
+        text: "API",
+        link: "/api/",
+        collapsable: false,
+        sidebarDepth: 1,
+        children: ["/api/", "/api/rate-limit", "/api/endpoints"],
+      },
+      {
         text: "Javascript",
         link: "/javascript/",
         collapsable: false,
@@ -96,13 +103,6 @@ export default {
           "/go/quick-start",
           "/go/counter-name",
         ],
-      },
-      {
-        text: "API",
-        link: "/api/",
-        collapsable: false,
-        sidebarDepth: 1,
-        children: ["/api/", "/api/rate-limit", "/api/endpoints"],
       },
     ],
   }),

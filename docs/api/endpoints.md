@@ -9,13 +9,14 @@ You can find all endpoints listed below. You can simply run the given example qu
 
 ## Counter Up
 
-You can count up with given counter name. The endpoint is `https://api.counterapi.dev/v1/up`.
+You can count up with given counter name. The endpoint is `https://api.counterapi.dev/v1/:namespace/:name/up`.
 
 ### Parameters
 
 name | required | description
 --- | --- | ---
-`name`| yes | Counter name
+`:namespace`| yes | Namespace for the counter
+`:name`| yes | Counter name
 
 ### Test
 
@@ -27,75 +28,80 @@ curl -X GET https://api.counterapi.dev/v1/test/test/up
 
 ## Counter Down
 
-You can count down with given counter name. The endpoint is `https://api.counterapi.dev/v1/down`.
+You can count down with given counter name. The endpoint is `https://api.counterapi.dev/v1/:namespace/:name/down`.
 
 ### Parameters
 
 name | required | description
 --- | --- | ---
-`name`| true | Counter name
+`:namespace`| yes | Namespace for the counter
+`:name`| yes | Counter name
+
 
 ### Test
 
 ```shell
-curl -X GET https://api.counterapi.dev/v1/down?name=APITest
+curl -X GET https://api.counterapi.dev/v1/test/test/down
 ```
 
 <APIRun type="down" />
 
 ## Set Counter
 
-You can set counter with given counter name and count number. The endpoint is `https://api.counterapi.dev/v1/set`.
+You can set counter with given counter name and count number. The endpoint is `https://api.counterapi.dev/v1/:namespace/:name/set`.
 
 ### Parameters
 
 name | required | description
---- | --- | ---
-`name`| true | Counter name
-`count`| true | Count number
+--- |----------| ---
+`:namespace`| yes      | Namespace for the counter
+`:name`| yes      | Counter name
+`count`| yes      | Count number
 
 ### Test
 
 ```shell
-curl -X GET https://api.counterapi.dev/v1/set?name=APITest&count=10
+curl -X GET https://api.counterapi.dev/v1/test/test/?count=10
 ```
 
 <APIRun type="set" />
 
 ## Counter Get
 
-You can count get with given counter name. The endpoint is `https://api.counterapi.dev/v1/get`.
+You can count get with given counter name. The endpoint is `https://api.counterapi.dev/v1/:namespace/:name/`.
 
 ### Parameters
 
 name | required | description
 --- | --- | ---
-`name`| true | Counter name
+`:namespace`| yes | Namespace for the counter
+`:name`| yes | Counter name
 
 ### Test
 
 ```shell
-curl -X GET https://api.counterapi.dev/v1/get?name=APITest
+curl -X GET https://api.counterapi.dev/v1/test/test
 ```
 
-<APIRun type="get" />
+<APIRun type="" />
 
 ## Counts List
 
-You can get count list with given counter name. The endpoint is `https://api.counterapi.dev/v1/counts`.
+You can get count list with given counter name. The endpoint is `https://api.counterapi.dev/v1/:namespace/:name/list`.
 
 ### Parameters
 
 name | required | description
---- | --- | ---
-`name`| true | Counter name
-`group_by`| true | Grouping the results by given time interval. e.g. `hour`, `day`, `week`, `month`, `year`.
-`order_by`| no | Ordering the results. e.g. `asc`, `desc`.
+--- |----------| ---
+`:namespace`| yes      | Namespace for the counter
+`:name`| yes      | Counter name
+`group_by`| no       | Grouping the results by given time interval, default `day`. Options: `hour`, `day`, `week`, `month`, `year`.
+`order_by`| no       | Ordering the results. e.g. `asc`, `desc`.
 
 ### Test
 
 ```shell
-curl -X GET https://api.counterapi.dev/v1/counts?name=APITest&group_by=day
+curl -X GET https://api.counterapi.dev/v1/test/test/list?group_by=day
 ```
 
-<APIRun type="counts/" />
+<APIRun type="list" />
