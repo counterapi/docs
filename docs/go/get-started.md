@@ -16,10 +16,10 @@ The fastest way to get Counter API for your project, install it with `go` itself
 To use it, open up your terminal and run the following command:
 
 ```shell
-go get -u github.com/counterapi/counter
+go get -u github.com/counterapi/counter-go
 ```
 
 ## Repository
 
-Counter API Go library lives <a href="https://github.com/counterapi/counter" target="_blank">
+Counter API Go library lives <a href="https://github.com/counterapi/counter-go" target="_blank">
 here</a>

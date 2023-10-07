@@ -13,6 +13,7 @@ Usage:
   counter [command]
 
 Available Commands:
+  completion  Generate the autocompletion script for the specified shell
   counts      Fetches counts of counter
   down        Count down for given name
   get         Fetches counter information
@@ -33,7 +34,7 @@ You can count up with given name. The name of the counter is unique. Do not forg
 up or down.
 
 ```shell
-❯ counter up --name MyCounter01                  
+❯ counter up --name MyCounter01 --namespace example.com               
 {
         "id": 12,
         "name": "MyCounter01",
@@ -46,7 +47,7 @@ up or down.
 ## Count Down
 
 ```shell
-❯ counter down --name MyCounter01
+❯ counter down --name MyCounter01 --namespace example.com
 {
     "id": 12,
     "name": "MyCounter01",
@@ -61,7 +62,7 @@ up or down.
 You can set your counter to with `set` function.
 
 ```shell
-❯ counter set --name MyCounter01 --count 10
+❯ counter set --name MyCounter01 --namespace example.com --count 10
 {
     "id": 12,
     "name": "MyCounter01",
@@ -76,7 +77,7 @@ You can set your counter to with `set` function.
 After counting up/down, you can get the final status of your counter with `get` function.
 
 ```shell
-❯ counter get --name MyCounter01
+❯ counter get --name MyCounter01 --namespace example.com
 {
     "id": 12,
     "name": "MyCounter01",
