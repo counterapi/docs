@@ -63,6 +63,19 @@ export default {
         text: "API",
         link: "/api/",
       },
+      {
+        text: 'Libraries',
+        children: [
+          {
+            text: "JavaScript",
+            link: "/javascript/",
+          },
+          {
+            text: "Go",
+            link: "/go/",
+          },
+        ],
+      },
     ],
     sidebar: [
       {
@@ -77,7 +90,12 @@ export default {
         link: "/api/",
         collapsable: false,
         sidebarDepth: 1,
-        children: ["/api/", "/api/rate-limit", "/api/endpoints"],
+        children: [
+          "/api/",
+          "/api/rate-limit",
+          "/api/endpoints",
+          "/api/cache"
+        ],
       },
       {
         text: "Javascript",

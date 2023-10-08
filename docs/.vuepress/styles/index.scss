@@ -21,9 +21,14 @@
   }
 }
 
-.home .hero {
-  img {
-    @apply w-56;
+.home {
+  .hero {
+    img {
+      @apply w-56;
+    }
+  }
+  .features {
+      @apply mt-24;
   }
 }
 
@@ -33,4 +38,8 @@
 
 .navbar a {
   @apply flex;
+}
+
+p {
+  @apply mb-4;
 }

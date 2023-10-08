@@ -11,11 +11,10 @@ actions:
     type: secondary
 features:
 - title: Free Unlimited API
-  details: Counter API is free to use with unlimited features.
+  details: The Counter API is a free and unlimited API that provides a wide range of features for developers.
 - title: Multiple Language Libraries
-  details: Counter API comes with Javascript and Go libraries for your projects.
+  details: The Counter API includes both JavaScript and Go libraries to facilitate integration into your projects.
 - title: Easy to use REST API
-  details: Very basic and powerful REST API backed with Go.
+  details: A fundamental yet robust REST API powered by Go.
 footer: Made by omegion with ❤️
 ---
-
