@@ -75,8 +75,8 @@ devDependencies:
     specifier: ^2.3.1
     version: 2.3.1(chalk@2.4.2)(commander@2.20.3)(esm@3.2.25)
   vuepress-plugin-sitemap2:
-    specifier: 2.0.0-beta.239
-    version: 2.0.0-beta.239(typescript@5.2.2)(vuepress@2.0.0-beta.67)
+    specifier: 2.0.0-beta.240
+    version: 2.0.0-beta.240(typescript@5.2.2)(vuepress@2.0.0-beta.67)
   vuepress-theme-api:
     specifier: ^1.0.0-beta.9
     version: 1.0.1
@@ -911,8 +911,8 @@ packages:
       '@vuepress/core': 2.0.0-beta.67(typescript@5.2.2)
       '@vuepress/utils': 2.0.0-beta.67
       ts-debounce: 4.0.0
-      vue: 3.3.6(typescript@5.2.2)
-      vue-router: 4.2.5(vue@3.3.6)
+      vue: 3.3.7(typescript@5.2.2)
+      vue-router: 4.2.5(vue@3.3.7)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
@@ -957,7 +957,7 @@ packages:
       '@vuepress/markdown': 2.0.0-beta.67
       '@vuepress/shared': 2.0.0-beta.67
       '@vuepress/utils': 2.0.0-beta.67
-      vue: 3.3.6(typescript@5.2.2)
+      vue: 3.3.7(typescript@5.2.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
@@ -989,7 +989,7 @@ packages:
       '@vuepress/core': 2.0.0-beta.67(typescript@5.2.2)
       '@vuepress/utils': 2.0.0-beta.67
       medium-zoom: 1.0.8
-      vue: 3.3.6(typescript@5.2.2)
+      vue: 3.3.7(typescript@5.2.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
@@ -1057,7 +1057,7 @@ packages:
       '@vuepress/core': 2.0.0-beta.67(typescript@5.2.2)
       '@vuepress/shared': 2.0.0-beta.67
       '@vuepress/utils': 2.0.0-beta.67
-      vue: 3.3.6(typescript@5.2.2)
+      vue: 3.3.7(typescript@5.2.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
@@ -1068,7 +1068,7 @@ packages:
     resolution: {integrity: sha512-gm8/6oAnd0Jh8g9xB89S+g8XJxt30QmeXK79J2Nwcbgy88CZnYbZssU1noyxFt4cHDX8wpUf8V5I388/dfHfoQ==}
     dependencies:
       '@mdit-vue/types': 0.12.0
-      '@vue/shared': 3.3.6
+      '@vue/shared': 3.3.7
     dev: true
 
   /@vuepress/theme-default@2.0.0-beta.67(sass-loader@13.3.2)(typescript@5.2.2):
@@ -4300,8 +4300,8 @@ packages:
       - typescript
     dev: true
 
-  /vuepress-plugin-sitemap2@2.0.0-beta.239(typescript@5.2.2)(vuepress@2.0.0-beta.67):
-    resolution: {integrity: sha512-lp4jrvBRDxl40vgkRsXTY0s3j3KGbQ0PBvqJYsS/0bx4iia5uJArgeCyV0Pll45DZJBRuK7IBiFuteOqhTgpIw==}
+  /vuepress-plugin-sitemap2@2.0.0-beta.240(typescript@5.2.2)(vuepress@2.0.0-beta.67):
+    resolution: {integrity: sha512-yJUEHzLbvk6k2xiYcVdnu7OK/Ck/wDaU4CskV4gc0y9bd1maz+TPgVyXoIR+//NERCoZXzR3co7jMdfVcMrSTQ==}
     engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       vuepress: 2.0.0-beta.67
@@ -4319,7 +4319,7 @@ packages:
       '@vuepress/utils': 2.0.0-beta.67
       sitemap: 7.1.1
       vuepress: 2.0.0-beta.67(@vuepress/client@2.0.0-beta.67)(sass-loader@13.3.2)(typescript@5.2.2)(vue@3.3.6)
-      vuepress-shared: 2.0.0-beta.239(typescript@5.2.2)(vuepress@2.0.0-beta.67)
+      vuepress-shared: 2.0.0-beta.240(typescript@5.2.2)(vuepress@2.0.0-beta.67)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
@@ -4338,41 +4338,6 @@ packages:
       commander: 2.20.3
       esm: 3.2.25
       sitemap: 3.2.2
-    dev: true
-
-  /vuepress-shared@2.0.0-beta.239(typescript@5.2.2)(vuepress@2.0.0-beta.67):
-    resolution: {integrity: sha512-DkDe1b1804TTkhvyepbEyhY8vdxD9nAOtABSruTJ3m54vWU36IYBFd8S2NgdUybm4bdb13HWVDtBymzG7brzvA==}
-    engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7'}
-    peerDependencies:
-      vuepress: 2.0.0-beta.67
-      vuepress-vite: 2.0.0-beta.67
-      vuepress-webpack: 2.0.0-beta.67
-    peerDependenciesMeta:
-      vuepress:
-        optional: true
-      vuepress-vite:
-        optional: true
-      vuepress-webpack:
-        optional: true
-    dependencies:
-      '@vuepress/client': 2.0.0-beta.67(typescript@5.2.2)
-      '@vuepress/shared': 2.0.0-beta.67
-      '@vuepress/utils': 2.0.0-beta.67
-      '@vueuse/core': 10.5.0(vue@3.3.6)
-      cheerio: 1.0.0-rc.12
-      dayjs: 1.11.10
-      execa: 8.0.1
-      fflate: 0.8.1
-      gray-matter: 4.0.3
-      semver: 7.5.4
-      striptags: 3.2.0
-      vue: 3.3.6(typescript@5.2.2)
-      vue-router: 4.2.5(vue@3.3.6)
-      vuepress: 2.0.0-beta.67(@vuepress/client@2.0.0-beta.67)(sass-loader@13.3.2)(typescript@5.2.2)(vue@3.3.6)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - supports-color
-      - typescript
     dev: true
 
   /vuepress-shared@2.0.0-beta.240(typescript@5.2.2)(vuepress@2.0.0-beta.67):
