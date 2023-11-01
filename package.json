@@ -35,7 +35,7 @@
     "typescript": "^5.0.0",
     "vue": "^3.3.4",
     "vuepress": "2.0.0-beta.67",
-    "vuepress-plugin-seo2": "2.0.0-beta.243",
+    "vuepress-plugin-seo2": "2.0.0-beta.244",
     "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-plugin-sitemap2": "2.0.0-beta.243",
     "vuepress-theme-api": "^1.0.0-beta.9"
