@@ -15,8 +15,8 @@ devDependencies:
     specifier: 2.0.0-beta.67
     version: 2.0.0-beta.67(typescript@5.2.2)
   '@vuepress/plugin-container':
-    specifier: 2.0.0-beta.67
-    version: 2.0.0-beta.67(typescript@5.2.2)
+    specifier: 2.0.0-beta.68
+    version: 2.0.0-beta.68(typescript@5.2.2)
   '@vuepress/plugin-nprogress':
     specifier: 2.0.0-beta.67
     version: 2.0.0-beta.67(typescript@5.2.2)
@@ -390,7 +390,7 @@ packages:
   /@mdit-vue/plugin-component@0.12.1:
     resolution: {integrity: sha512-L3elbvuKUufXwPLHrmJGd/ijd/QKxfcHXy3kRy4O+P7UIV7HSWePpfB0k+wWee+by3MviYYxjVAi392z+DGy3Q==}
     dependencies:
-      '@types/markdown-it': 13.0.5
+      '@types/markdown-it': 13.0.6
       markdown-it: 13.0.2
     dev: true
 
@@ -405,7 +405,7 @@ packages:
     resolution: {integrity: sha512-C6ycNjrJ+T4JgbVxwo9cUkfLacOO841Yl8ogqd5PJmAVpc5cM2OLBkqqkZxNRXos3g9xM1VvIQ7gK/047UNADg==}
     dependencies:
       '@mdit-vue/types': 0.12.0
-      '@types/markdown-it': 13.0.5
+      '@types/markdown-it': 13.0.6
       gray-matter: 4.0.3
       markdown-it: 13.0.2
     dev: true
@@ -424,7 +424,7 @@ packages:
     dependencies:
       '@mdit-vue/shared': 0.12.1
       '@mdit-vue/types': 0.12.0
-      '@types/markdown-it': 13.0.5
+      '@types/markdown-it': 13.0.6
       markdown-it: 13.0.2
     dev: true
 
@@ -441,7 +441,7 @@ packages:
     resolution: {integrity: sha512-6j332CsSqumy1+StIM3XphdXG1zj9NXuWestDJrKgS3OLy5P0EAioXScUYiZYysw61ZG+2pP37MW7Hg+eHbyIg==}
     dependencies:
       '@mdit-vue/types': 0.12.0
-      '@types/markdown-it': 13.0.5
+      '@types/markdown-it': 13.0.6
       markdown-it: 13.0.2
     dev: true
 
@@ -458,7 +458,7 @@ packages:
     dependencies:
       '@mdit-vue/shared': 0.12.1
       '@mdit-vue/types': 0.12.0
-      '@types/markdown-it': 13.0.5
+      '@types/markdown-it': 13.0.6
       markdown-it: 13.0.2
     dev: true
 
@@ -476,7 +476,7 @@ packages:
     dependencies:
       '@mdit-vue/shared': 0.12.1
       '@mdit-vue/types': 0.12.0
-      '@types/markdown-it': 13.0.5
+      '@types/markdown-it': 13.0.6
       markdown-it: 13.0.2
     dev: true
 
@@ -493,7 +493,7 @@ packages:
     resolution: {integrity: sha512-bXgd0KThe4jC2leCFDFsyrudXIckvTwV4WnQK/rRMrXq0/BAuVdSNdIv1LGCWZxD5+oDyPyEPd0lalTIFwqsmg==}
     dependencies:
       '@mdit-vue/types': 0.12.0
-      '@types/markdown-it': 13.0.5
+      '@types/markdown-it': 13.0.6
       markdown-it: 13.0.2
     dev: true
 
@@ -655,20 +655,13 @@ packages:
   /@types/markdown-it-emoji@2.0.3:
     resolution: {integrity: sha512-YjoZM0vP2KZSTwDh/5LamI58Cynk+lCfRJWM2nBAiWwclfyfj2wpaoDEo6ZVpH6Fn1f0RYs8q7u2biHL5YuEOg==}
     dependencies:
-      '@types/markdown-it': 13.0.5
+      '@types/markdown-it': 13.0.6
     dev: true
 
   /@types/markdown-it-emoji@2.0.4:
     resolution: {integrity: sha512-H6ulk/ZmbDxOayPwI/leJzrmoW1YKX1Z+MVSCHXuYhvqckV4I/c+hPTf6UiqJyn2avWugfj30XroheEb6/Ekqg==}
     dependencies:
       '@types/markdown-it': 13.0.6
-    dev: true
-
-  /@types/markdown-it@13.0.5:
-    resolution: {integrity: sha512-QhJP7hkq3FCrFNx0szMNCT/79CXfcEgUIA3jc5GBfeXqoKsk3R8JZm2wRXJ2DiyjbPE4VMFOSDemLFcUTZmHEQ==}
-    dependencies:
-      '@types/linkify-it': 3.0.4
-      '@types/mdurl': 1.0.4
     dev: true
 
   /@types/markdown-it@13.0.6:
@@ -1056,12 +1049,12 @@ packages:
       '@mdit-vue/plugin-toc': 0.12.1
       '@mdit-vue/shared': 0.12.1
       '@mdit-vue/types': 0.12.0
-      '@types/markdown-it': 13.0.5
+      '@types/markdown-it': 13.0.6
       '@types/markdown-it-emoji': 2.0.3
       '@vuepress/shared': 2.0.0-beta.67
       '@vuepress/utils': 2.0.0-beta.67
       markdown-it: 13.0.2
-      markdown-it-anchor: 8.6.7(@types/markdown-it@13.0.5)(markdown-it@13.0.2)
+      markdown-it-anchor: 8.6.7(@types/markdown-it@13.0.6)(markdown-it@13.0.2)
       markdown-it-emoji: 2.0.2
       mdurl: 1.0.1
     transitivePeerDependencies:
@@ -1129,11 +1122,27 @@ packages:
   /@vuepress/plugin-container@2.0.0-beta.67(typescript@5.2.2):
     resolution: {integrity: sha512-NuxjNkyJ2bYsRpw3iAiok2aeKYzZQsEZ8A/i+4LYwrDXbj3HfjlDhfPYhN+BMQfbxE9LpXOG0APNcXVCNMu0hw==}
     dependencies:
-      '@types/markdown-it': 13.0.5
+      '@types/markdown-it': 13.0.6
       '@vuepress/core': 2.0.0-beta.67(typescript@5.2.2)
       '@vuepress/markdown': 2.0.0-beta.67
       '@vuepress/shared': 2.0.0-beta.67
       '@vuepress/utils': 2.0.0-beta.67
+      markdown-it: 13.0.2
+      markdown-it-container: 3.0.0
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - supports-color
+      - typescript
+    dev: true
+
+  /@vuepress/plugin-container@2.0.0-beta.68(typescript@5.2.2):
+    resolution: {integrity: sha512-oRGO9B9KgT9ZqjOcxBdTZI7eeI80qzYOYy8BGA+tYeKVy2AaLQk7GsUm3mMQn6Z82AdqBtRag/eUUiMo3p6toA==}
+    dependencies:
+      '@types/markdown-it': 13.0.6
+      '@vuepress/core': 2.0.0-beta.68(typescript@5.2.2)
+      '@vuepress/markdown': 2.0.0-beta.68
+      '@vuepress/shared': 2.0.0-beta.68
+      '@vuepress/utils': 2.0.0-beta.68
       markdown-it: 13.0.2
       markdown-it-container: 3.0.0
     transitivePeerDependencies:
@@ -3026,16 +3035,6 @@ packages:
   /map-obj@4.3.0:
     resolution: {integrity: sha512-hdN1wVrZbb29eBGiGjJbeP8JbKjq1urkHJ/LIP/NY48MZ1QVXUsQBV1G1zvYFHn1XE06cwjBsOI2K3Ulnj1YXQ==}
     engines: {node: '>=8'}
-    dev: true
-
-  /markdown-it-anchor@8.6.7(@types/markdown-it@13.0.5)(markdown-it@13.0.2):
-    resolution: {integrity: sha512-FlCHFwNnutLgVTflOYHPW2pPcl2AACqVzExlkGQNsi4CJgqOHN7YTgDd4LuhgN1BFO3TS0vLAruV1Td6dwWPJA==}
-    peerDependencies:
-      '@types/markdown-it': '*'
-      markdown-it: '*'
-    dependencies:
-      '@types/markdown-it': 13.0.5
-      markdown-it: 13.0.2
     dev: true
 
   /markdown-it-anchor@8.6.7(@types/markdown-it@13.0.6)(markdown-it@13.0.2):
