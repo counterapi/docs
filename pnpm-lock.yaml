@@ -21,8 +21,8 @@ devDependencies:
     specifier: 2.0.0-beta.67
     version: 2.0.0-beta.67(typescript@5.2.2)
   '@vuepress/plugin-palette':
-    specifier: 2.0.0-beta.67
-    version: 2.0.0-beta.67(typescript@5.2.2)
+    specifier: 2.0.0-beta.68
+    version: 2.0.0-beta.68(typescript@5.2.2)
   '@vuepress/plugin-search':
     specifier: 2.0.0-beta.67
     version: 2.0.0-beta.67(typescript@5.2.2)
@@ -1217,6 +1217,18 @@ packages:
     dependencies:
       '@vuepress/core': 2.0.0-beta.67(typescript@5.2.2)
       '@vuepress/utils': 2.0.0-beta.67
+      chokidar: 3.5.3
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - supports-color
+      - typescript
+    dev: true
+
+  /@vuepress/plugin-palette@2.0.0-beta.68(typescript@5.2.2):
+    resolution: {integrity: sha512-LILoXCY9NMi+doNz09HiUeNiElJy6ECbR/yodOBp+jcwGZ4RVPFp8PEeK3jCZ8+UuJxa1mmmi6dqTxp02xrAFQ==}
+    dependencies:
+      '@vuepress/core': 2.0.0-beta.68(typescript@5.2.2)
+      '@vuepress/utils': 2.0.0-beta.68
       chokidar: 3.5.3
     transitivePeerDependencies:
       - '@vue/composition-api'
