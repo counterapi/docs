@@ -45,8 +45,8 @@ devDependencies:
     specifier: ^2.0.0
     version: 2.2.0
   flowbite-vue:
-    specifier: 0.1.1
-    version: 0.1.1(tailwindcss@3.3.6)(vue@3.3.11)
+    specifier: 0.1.2
+    version: 0.1.2(tailwindcss@3.3.6)(vue@3.3.11)
   node-sass:
     specifier: ^9.0.0
     version: 9.0.0
@@ -2195,8 +2195,8 @@ packages:
       vue-resize: 2.0.0-alpha.1(vue@3.3.11)
     dev: true
 
-  /flowbite-vue@0.1.1(tailwindcss@3.3.6)(vue@3.3.11):
-    resolution: {integrity: sha512-RjtcoKdxrCjDQ+1v0rtfq/kLZhtUAdhp6cPGdIJ8InAH8gcPAnTikRNLae3k9n39crHRVyw2cAdWPi8+lWqWog==}
+  /flowbite-vue@0.1.2(tailwindcss@3.3.6)(vue@3.3.11):
+    resolution: {integrity: sha512-0XFqA+DYe8XAULLSh1LoWDVyBrHX/D3/tnPNesblYeogJxnW9wjoC25+v3oPQP33kB+wGy4fjzL25QiTV+CJHA==}
     engines: {node: '>=14.x', npm: '>=6.x'}
     peerDependencies:
       tailwindcss: ^3
