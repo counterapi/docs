@@ -28,7 +28,7 @@ devDependencies:
     version: 2.0.0-rc.0(typescript@5.3.3)
   '@vuepress/theme-default':
     specifier: 2.0.0-rc.0
-    version: 2.0.0-rc.0(sass-loader@13.3.2)(typescript@5.3.3)
+    version: 2.0.0-rc.0(sass-loader@13.3.3)(typescript@5.3.3)
   '@vuepress/utils':
     specifier: 2.0.0-rc.0
     version: 2.0.0-rc.0
@@ -54,8 +54,8 @@ devDependencies:
     specifier: ^3.0.0
     version: 3.1.1
   sass-loader:
-    specifier: 13.3.2
-    version: 13.3.2(node-sass@9.0.0)(webpack@5.89.0)
+    specifier: 13.3.3
+    version: 13.3.3(node-sass@9.0.0)(webpack@5.89.0)
   tailwindcss:
     specifier: ^3.3.3
     version: 3.4.0
@@ -67,7 +67,7 @@ devDependencies:
     version: 3.3.13(typescript@5.3.3)
   vuepress:
     specifier: 2.0.0-rc.0
-    version: 2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@13.3.2)(typescript@5.3.3)(vue@3.3.13)
+    version: 2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@13.3.3)(typescript@5.3.3)(vue@3.3.13)
   vuepress-plugin-seo2:
     specifier: 2.0.0-beta.246
     version: 2.0.0-beta.246(typescript@5.3.3)(vuepress@2.0.0-rc.0)
@@ -1149,7 +1149,7 @@ packages:
       '@vue/shared': 3.3.13
     dev: true
 
-  /@vuepress/theme-default@2.0.0-rc.0(sass-loader@13.3.2)(typescript@5.3.3):
+  /@vuepress/theme-default@2.0.0-rc.0(sass-loader@13.3.3)(typescript@5.3.3):
     resolution: {integrity: sha512-I8Y08evDmMuD1jh3NftPpFFSlCWOizQDJLjN7EQwcg7jiAP4A7c2REo6nBN2EmP24Mi7UrRM+RnytHR5V+pElA==}
     peerDependencies:
       sass-loader: ^13.3.2
@@ -1173,7 +1173,7 @@ packages:
       '@vuepress/utils': 2.0.0-rc.0
       '@vueuse/core': 10.7.0(vue@3.3.13)
       sass: 1.69.5
-      sass-loader: 13.3.2(node-sass@9.0.0)(webpack@5.89.0)
+      sass-loader: 13.3.3(node-sass@9.0.0)(webpack@5.89.0)
       vue: 3.3.13(typescript@5.3.3)
       vue-router: 4.2.5(vue@3.3.13)
     transitivePeerDependencies:
@@ -3720,8 +3720,8 @@ packages:
       yargs: 17.7.2
     dev: true
 
-  /sass-loader@13.3.2(node-sass@9.0.0)(webpack@5.89.0):
-    resolution: {integrity: sha512-CQbKl57kdEv+KDLquhC+gE3pXt74LEAzm+tzywcA0/aHZuub8wTErbjAoNI57rPUWRYRNC5WUnNl8eGJNbDdwg==}
+  /sass-loader@13.3.3(node-sass@9.0.0)(webpack@5.89.0):
+    resolution: {integrity: sha512-mt5YN2F1MOZr3d/wBRcZxeFgwgkH44wVc2zohO2YF6JiOMkiXe4BYRZpSu2sO1g71mo/j16txzUhsKZlqjVGzA==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       fibers: '>= 3.1.0'
@@ -4434,7 +4434,7 @@ packages:
     dependencies:
       '@vuepress/shared': 2.0.0-beta.67
       '@vuepress/utils': 2.0.0-beta.67
-      vuepress: 2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@13.3.2)(typescript@5.3.3)(vue@3.3.13)
+      vuepress: 2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@13.3.3)(typescript@5.3.3)(vue@3.3.13)
       vuepress-shared: 2.0.0-beta.246(typescript@5.3.3)(vuepress@2.0.0-rc.0)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -4460,7 +4460,7 @@ packages:
       '@vuepress/shared': 2.0.0-beta.67
       '@vuepress/utils': 2.0.0-beta.67
       sitemap: 7.1.1
-      vuepress: 2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@13.3.2)(typescript@5.3.3)(vue@3.3.13)
+      vuepress: 2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@13.3.3)(typescript@5.3.3)(vue@3.3.13)
       vuepress-shared: 2.0.0-beta.246(typescript@5.3.3)(vuepress@2.0.0-rc.0)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -4510,7 +4510,7 @@ packages:
       striptags: 3.2.0
       vue: 3.3.13(typescript@5.3.3)
       vue-router: 4.2.5(vue@3.3.13)
-      vuepress: 2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@13.3.2)(typescript@5.3.3)(vue@3.3.13)
+      vuepress: 2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@13.3.3)(typescript@5.3.3)(vue@3.3.13)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
@@ -4528,7 +4528,7 @@ packages:
       - debug
     dev: true
 
-  /vuepress-vite@2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@13.3.2)(typescript@5.3.3)(vue@3.3.13):
+  /vuepress-vite@2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@13.3.3)(typescript@5.3.3)(vue@3.3.13):
     resolution: {integrity: sha512-+2XBejeiskPyr2raBeA2o4uDFDsjtadpUVmtio3qqFtQpOhidz/ORuiTLr2UfLtFn1ASIHP6Vy2YjQ0e/TeUVw==}
     engines: {node: '>=18.16.0'}
     hasBin: true
@@ -4540,7 +4540,7 @@ packages:
       '@vuepress/cli': 2.0.0-rc.0(typescript@5.3.3)
       '@vuepress/client': 2.0.0-rc.0(typescript@5.3.3)
       '@vuepress/core': 2.0.0-rc.0(typescript@5.3.3)
-      '@vuepress/theme-default': 2.0.0-rc.0(sass-loader@13.3.2)(typescript@5.3.3)
+      '@vuepress/theme-default': 2.0.0-rc.0(sass-loader@13.3.3)(typescript@5.3.3)
       vue: 3.3.13(typescript@5.3.3)
     transitivePeerDependencies:
       - '@types/node'
@@ -4557,12 +4557,12 @@ packages:
       - typescript
     dev: true
 
-  /vuepress@2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@13.3.2)(typescript@5.3.3)(vue@3.3.13):
+  /vuepress@2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@13.3.3)(typescript@5.3.3)(vue@3.3.13):
     resolution: {integrity: sha512-sydt/B7+pIw926G5PntYmptLkC5o2buXKh+WR1+P2KnsvkXU+UGnQrJJ0FBvu/4RNuY99tkUZd59nyPhEmRrCg==}
     engines: {node: '>=18.16.0'}
     hasBin: true
     dependencies:
-      vuepress-vite: 2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@13.3.2)(typescript@5.3.3)(vue@3.3.13)
+      vuepress-vite: 2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@13.3.3)(typescript@5.3.3)(vue@3.3.13)
     transitivePeerDependencies:
       - '@types/node'
       - '@vue/composition-api'
