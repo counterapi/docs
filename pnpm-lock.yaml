@@ -9,8 +9,8 @@ devDependencies:
     specifier: 2.0.0-rc.2
     version: 2.0.0-rc.2(typescript@5.3.3)
   '@vuepress/client':
-    specifier: 2.0.0-rc.0
-    version: 2.0.0-rc.0(typescript@5.3.3)
+    specifier: 2.0.0-rc.2
+    version: 2.0.0-rc.2(typescript@5.3.3)
   '@vuepress/plugin-back-to-top':
     specifier: 2.0.0-rc.0
     version: 2.0.0-rc.0(typescript@5.3.3)
