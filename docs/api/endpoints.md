@@ -61,7 +61,7 @@ name | required | description
 ### Test
 
 ```shell
-curl -X GET https://api.counterapi.dev/v1/test/test/?count=10
+curl -X GET https://api.counterapi.dev/v1/test/test/set?count=10
 ```
 
 <APIRun type="set" />
