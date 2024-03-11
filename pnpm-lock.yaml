@@ -27,8 +27,8 @@ devDependencies:
     specifier: 2.0.0-rc.18
     version: 2.0.0-rc.18(typescript@5.4.2)(vuepress@2.0.0-rc.8)
   '@vuepress/theme-default':
-    specifier: 2.0.0-rc.19
-    version: 2.0.0-rc.19(sass-loader@14.1.1)(typescript@5.4.2)(vuepress@2.0.0-rc.8)
+    specifier: 2.0.0-rc.20
+    version: 2.0.0-rc.20(sass-loader@14.1.1)(typescript@5.4.2)(vuepress@2.0.0-rc.8)
   '@vuepress/utils':
     specifier: 2.0.0-rc.2
     version: 2.0.0-rc.2
@@ -1365,8 +1365,8 @@ packages:
       '@mdit-vue/types': 2.0.0
     dev: true
 
-  /@vuepress/theme-default@2.0.0-rc.19(sass-loader@14.1.1)(typescript@5.4.2)(vuepress@2.0.0-rc.8):
-    resolution: {integrity: sha512-cB84sTnDXecfdAqGnujHIDJSuKlq4+x05vE3892xmVyHpr/a0jYg3KvUa1ghLlPFuQuYsdX8AebYacQ2y/vtBg==}
+  /@vuepress/theme-default@2.0.0-rc.20(sass-loader@14.1.1)(typescript@5.4.2)(vuepress@2.0.0-rc.8):
+    resolution: {integrity: sha512-fXiUNMdmG2d1V6RRigm9/lMHKrJp1MoXPO4CRxdJnfpfxlzgTA9JqEPfgBqeovS1OE+pm+GrFSxRToAHSfS68g==}
     peerDependencies:
       sass-loader: ^14.0.0
       vuepress: 2.0.0-rc.8
