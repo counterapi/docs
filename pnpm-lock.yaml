@@ -34,7 +34,7 @@ devDependencies:
     version: 2.0.0-rc.2
   autoprefixer:
     specifier: ^10.4.16
-    version: 10.4.18(postcss@8.4.37)
+    version: 10.4.19(postcss@8.4.38)
   axios:
     specifier: ^1.0.0
     version: 1.6.8
@@ -895,7 +895,7 @@ packages:
       '@vuepress/core': 2.0.0-rc.7(typescript@5.4.3)
       '@vuepress/shared': 2.0.0-rc.7
       '@vuepress/utils': 2.0.0-rc.7
-      autoprefixer: 10.4.18(postcss@8.4.36)
+      autoprefixer: 10.4.19(postcss@8.4.36)
       connect-history-api-fallback: 2.0.0
       postcss: 8.4.36
       postcss-load-config: 5.0.3(postcss@8.4.36)
@@ -1647,8 +1647,8 @@ packages:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: true
 
-  /autoprefixer@10.4.18(postcss@8.4.36):
-    resolution: {integrity: sha512-1DKbDfsr6KUElM6wg+0zRNkB/Q7WcKYAaK+pzXn+Xqmszm/5Xa9coeNdtP88Vi+dPzZnMjhge8GIV49ZQkDa+g==}
+  /autoprefixer@10.4.19(postcss@8.4.36):
+    resolution: {integrity: sha512-BaENR2+zBZ8xXhM4pUaKUxlVdxZ0EZhjvbopwnXmxRUfqDmwSpC2lAi/QXvx7NRdPCo1WKEcEF6mV64si1z4Ew==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
@@ -1663,8 +1663,8 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /autoprefixer@10.4.18(postcss@8.4.37):
-    resolution: {integrity: sha512-1DKbDfsr6KUElM6wg+0zRNkB/Q7WcKYAaK+pzXn+Xqmszm/5Xa9coeNdtP88Vi+dPzZnMjhge8GIV49ZQkDa+g==}
+  /autoprefixer@10.4.19(postcss@8.4.38):
+    resolution: {integrity: sha512-BaENR2+zBZ8xXhM4pUaKUxlVdxZ0EZhjvbopwnXmxRUfqDmwSpC2lAi/QXvx7NRdPCo1WKEcEF6mV64si1z4Ew==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
@@ -1675,7 +1675,7 @@ packages:
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
-      postcss: 8.4.37
+      postcss: 8.4.38
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -1748,7 +1748,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001599
-      electron-to-chromium: 1.4.708
+      electron-to-chromium: 1.4.713
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
     dev: true
@@ -2133,8 +2133,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /electron-to-chromium@1.4.708:
-    resolution: {integrity: sha512-iWgEEvREL4GTXXHKohhh33+6Y8XkPI5eHihDmm8zUk5Zo7HICEW+wI/j5kJ2tbuNUCXJ/sNXa03ajW635DiJXA==}
+  /electron-to-chromium@1.4.713:
+    resolution: {integrity: sha512-vDarADhwntXiULEdmWd77g2dV6FrNGa8ecAC29MZ4TwPut2fvosD0/5sJd1qWNNe8HcJFAC+F5Lf9jW1NPtWmw==}
     dev: true
 
   /emoji-regex@10.3.0:
@@ -3671,8 +3671,8 @@ packages:
       source-map-js: 1.1.0
     dev: true
 
-  /postcss@8.4.37:
-    resolution: {integrity: sha512-7iB/v/r7Woof0glKLH8b1SPHrsX7uhdO+Geb41QpF/+mWZHU3uxxSlN+UXGVit1PawOYDToO+AbZzhBzWRDwbQ==}
+  /postcss@8.4.38:
+    resolution: {integrity: sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.7
