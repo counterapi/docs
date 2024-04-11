@@ -28,7 +28,7 @@ devDependencies:
     version: 2.0.0-rc.24(typescript@5.4.5)(vuepress@2.0.0-rc.9)
   '@vuepress/theme-default':
     specifier: 2.0.0-rc.24
-    version: 2.0.0-rc.24(sass-loader@14.1.1)(typescript@5.4.5)(vuepress@2.0.0-rc.9)
+    version: 2.0.0-rc.24(sass-loader@14.2.0)(typescript@5.4.5)(vuepress@2.0.0-rc.9)
   '@vuepress/utils':
     specifier: 2.0.0-rc.2
     version: 2.0.0-rc.2
@@ -54,8 +54,8 @@ devDependencies:
     specifier: ^3.0.0
     version: 3.2.5
   sass-loader:
-    specifier: 14.1.1
-    version: 14.1.1(node-sass@9.0.0)
+    specifier: 14.2.0
+    version: 14.2.0(node-sass@9.0.0)
   tailwindcss:
     specifier: ^3.3.3
     version: 3.4.3
@@ -1589,7 +1589,7 @@ packages:
       '@mdit-vue/types': 2.0.0
     dev: true
 
-  /@vuepress/theme-default@2.0.0-rc.24(sass-loader@14.1.1)(typescript@5.4.5)(vuepress@2.0.0-rc.9):
+  /@vuepress/theme-default@2.0.0-rc.24(sass-loader@14.2.0)(typescript@5.4.5)(vuepress@2.0.0-rc.9):
     resolution: {integrity: sha512-jzFIV4DnaRcew7iZUf7fvKoJ4dV2QKVkcCK6jwTCEzjO/XaPZD+yl9mUWoLKTM3NYgZx28RdBfcH6im/oC5eMQ==}
     peerDependencies:
       sass-loader: ^14.0.0
@@ -1615,7 +1615,7 @@ packages:
       '@vuepress/plugin-theme-data': 2.0.0-rc.21(typescript@5.4.5)(vuepress@2.0.0-rc.9)
       '@vueuse/core': 10.9.0(vue@3.4.21)
       sass: 1.74.1
-      sass-loader: 14.1.1(node-sass@9.0.0)
+      sass-loader: 14.2.0(node-sass@9.0.0)
       vue: 3.4.21(typescript@5.4.5)
       vuepress: 2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.7)(typescript@5.4.5)(vue@3.4.21)
     transitivePeerDependencies:
@@ -4121,8 +4121,8 @@ packages:
       yargs: 17.7.2
     dev: true
 
-  /sass-loader@14.1.1(node-sass@9.0.0):
-    resolution: {integrity: sha512-QX8AasDg75monlybel38BZ49JP5Z+uSKfKwF2rO7S74BywaRmGQMUBw9dtkS+ekyM/QnP+NOrRYq8ABMZ9G8jw==}
+  /sass-loader@14.2.0(node-sass@9.0.0):
+    resolution: {integrity: sha512-jxmjDXD9OYNDb2bp9JvopdE6QjecQY9beTWik/6sEHrsMxyo90Gyc471A4NUz60NLs4WsAh6yVtIvhLwEZcXeg==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
       '@rspack/core': 0.x || 1.x
