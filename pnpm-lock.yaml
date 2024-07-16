@@ -49,7 +49,7 @@ importers:
         version: 2.4.1(rollup@4.18.1)
       flowbite-vue:
         specifier: 0.1.5
-        version: 0.1.5(tailwindcss@3.4.5)(vue@3.4.31(typescript@5.5.3))
+        version: 0.1.5(tailwindcss@3.4.6)(vue@3.4.31(typescript@5.5.3))
       node-sass:
         specifier: ^9.0.0
         version: 9.0.0
@@ -61,7 +61,7 @@ importers:
         version: 14.2.1(node-sass@9.0.0)(sass@1.77.8)
       tailwindcss:
         specifier: ^3.3.3
-        version: 3.4.5
+        version: 3.4.6
       typescript:
         specifier: ^5.0.0
         version: 5.5.3
@@ -2488,8 +2488,8 @@ packages:
   tailwind-merge@2.3.0:
     resolution: {integrity: sha512-vkYrLpIP+lgR0tQCG6AP7zZXCTLc1Lnv/CCRT3BqJ9CZ3ui2++GPaGb1x/ILsINIMSYqqvrpqjUFsMNLlW99EA==}
 
-  tailwindcss@3.4.5:
-    resolution: {integrity: sha512-DlTxttYcogpDfx3tf/8jfnma1nfAYi2cBUYV2YNoPPecwmO3YGiFlOX9D8tGAu+EDF38ryBzvrDKU/BLMsUwbw==}
+  tailwindcss@3.4.6:
+    resolution: {integrity: sha512-1uRHzPB+Vzu57ocybfZ4jh5Q3SdlH7XW23J5sQoM9LhE9eIOlzxer/3XPSsycvih3rboRsvt0QCmzSrqyOYUIA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -4350,7 +4350,7 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  flowbite-vue@0.1.5(tailwindcss@3.4.5)(vue@3.4.31(typescript@5.5.3)):
+  flowbite-vue@0.1.5(tailwindcss@3.4.6)(vue@3.4.31(typescript@5.5.3)):
     dependencies:
       '@vueuse/core': 10.10.0(vue@3.4.31(typescript@5.5.3))
       classnames: 2.5.1
@@ -4359,7 +4359,7 @@ snapshots:
       lodash-es: 4.17.21
       nanoid: 5.0.7
       tailwind-merge: 2.3.0
-      tailwindcss: 3.4.5
+      tailwindcss: 3.4.6
       vue: 3.4.31(typescript@5.5.3)
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -5520,7 +5520,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.24.8
 
-  tailwindcss@3.4.5:
+  tailwindcss@3.4.6:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
