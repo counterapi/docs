@@ -49,7 +49,7 @@ importers:
         version: 2.5.1(rollup@4.20.0)
       flowbite-vue:
         specifier: 0.1.5
-        version: 0.1.5(tailwindcss@3.4.9)(vue@3.4.37(typescript@5.5.4))
+        version: 0.1.5(tailwindcss@3.4.10)(vue@3.4.37(typescript@5.5.4))
       node-sass:
         specifier: ^9.0.0
         version: 9.0.0
@@ -61,7 +61,7 @@ importers:
         version: 16.0.0(node-sass@9.0.0)(sass@1.77.8)
       tailwindcss:
         specifier: ^3.3.3
-        version: 3.4.9
+        version: 3.4.10
       typescript:
         specifier: ^5.0.0
         version: 5.5.4
@@ -2137,8 +2137,8 @@ packages:
     peerDependencies:
       postcss: ^8.2.14
 
-  postcss-selector-parser@6.1.1:
-    resolution: {integrity: sha512-b4dlw/9V8A71rLIDsSwVmak9z2DuBUB7CA1/wSdelNEzqsjoSPeADTWNO09lpH49Diy3/JIZ2bSPB1dI3LJCHg==}
+  postcss-selector-parser@6.1.2:
+    resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
     engines: {node: '>=4'}
 
   postcss-value-parser@4.2.0:
@@ -2493,8 +2493,8 @@ packages:
   tailwind-merge@2.3.0:
     resolution: {integrity: sha512-vkYrLpIP+lgR0tQCG6AP7zZXCTLc1Lnv/CCRT3BqJ9CZ3ui2++GPaGb1x/ILsINIMSYqqvrpqjUFsMNLlW99EA==}
 
-  tailwindcss@3.4.9:
-    resolution: {integrity: sha512-1SEOvRr6sSdV5IDf9iC+NU4dhwdqzF4zKKq3sAbasUWHEM6lsMhX+eNN5gkPx1BvLFEnZQEUFbXnGj8Qlp83Pg==}
+  tailwindcss@3.4.10:
+    resolution: {integrity: sha512-KWZkVPm7yJRhdu4SRSl9d4AK2wM3a50UsvgHZO7xY77NQr2V+fIrEuoDGQcbvswWvFGbS2f6e+jC/6WJm1Dl0w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -4360,7 +4360,7 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  flowbite-vue@0.1.5(tailwindcss@3.4.9)(vue@3.4.37(typescript@5.5.4)):
+  flowbite-vue@0.1.5(tailwindcss@3.4.10)(vue@3.4.37(typescript@5.5.4)):
     dependencies:
       '@vueuse/core': 10.10.0(vue@3.4.37(typescript@5.5.4))
       classnames: 2.5.1
@@ -4369,7 +4369,7 @@ snapshots:
       lodash-es: 4.17.21
       nanoid: 5.0.7
       tailwind-merge: 2.3.0
-      tailwindcss: 3.4.9
+      tailwindcss: 3.4.10
       vue: 3.4.37(typescript@5.5.4)
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -5172,9 +5172,9 @@ snapshots:
   postcss-nested@6.2.0(postcss@8.4.41):
     dependencies:
       postcss: 8.4.41
-      postcss-selector-parser: 6.1.1
+      postcss-selector-parser: 6.1.2
 
-  postcss-selector-parser@6.1.1:
+  postcss-selector-parser@6.1.2:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
@@ -5530,7 +5530,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.25.0
 
-  tailwindcss@3.4.9:
+  tailwindcss@3.4.10:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -5551,7 +5551,7 @@ snapshots:
       postcss-js: 4.0.1(postcss@8.4.41)
       postcss-load-config: 4.0.2(postcss@8.4.41)
       postcss-nested: 6.2.0(postcss@8.4.41)
-      postcss-selector-parser: 6.1.1
+      postcss-selector-parser: 6.1.2
       resolve: 1.22.8
       sucrase: 3.35.0
     transitivePeerDependencies:
