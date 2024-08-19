@@ -31,7 +31,7 @@ importers:
         version: 2.0.0-rc.41(typescript@5.5.4)(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.7(@types/node@22.4.0)(jiti@1.21.6)(sass@1.77.8)(typescript@5.5.4))(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))
       '@vuepress/theme-default':
         specifier: 2.0.0-rc.41
-        version: 2.0.0-rc.41(sass-loader@16.0.0(node-sass@9.0.0)(sass@1.77.8))(typescript@5.5.4)(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.7(@types/node@22.4.0)(jiti@1.21.6)(sass@1.77.8)(typescript@5.5.4))(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))
+        version: 2.0.0-rc.41(sass-loader@16.0.1(node-sass@9.0.0)(sass@1.77.8))(typescript@5.5.4)(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.7(@types/node@22.4.0)(jiti@1.21.6)(sass@1.77.8)(typescript@5.5.4))(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))
       '@vuepress/utils':
         specifier: 2.0.0-rc.2
         version: 2.0.0-rc.2
@@ -57,8 +57,8 @@ importers:
         specifier: ^3.0.0
         version: 3.3.3
       sass-loader:
-        specifier: 16.0.0
-        version: 16.0.0(node-sass@9.0.0)(sass@1.77.8)
+        specifier: 16.0.1
+        version: 16.0.1(node-sass@9.0.0)(sass@1.77.8)
       tailwindcss:
         specifier: ^3.3.3
         version: 3.4.10
@@ -2279,8 +2279,8 @@ packages:
     engines: {node: '>=12'}
     hasBin: true
 
-  sass-loader@16.0.0:
-    resolution: {integrity: sha512-n13Z+3rU9A177dk4888czcVFiC8CL9dii4qpXWUg3YIIgZEvi9TCFKjOQcbK0kJM7DJu9VucrZFddvNfYCPwtw==}
+  sass-loader@16.0.1:
+    resolution: {integrity: sha512-xACl1ToTsKnL9Ce5yYpRxrLj9QUDCnwZNhzpC7tKiFyA8zXsd3Ap+HGVnbCgkdQcm43E+i6oKAWBsvGA6ZoiMw==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
       '@rspack/core': 0.x || 1.x
@@ -3722,7 +3722,7 @@ snapshots:
     dependencies:
       '@mdit-vue/types': 2.1.0
 
-  '@vuepress/theme-default@2.0.0-rc.41(sass-loader@16.0.0(node-sass@9.0.0)(sass@1.77.8))(typescript@5.5.4)(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.7(@types/node@22.4.0)(jiti@1.21.6)(sass@1.77.8)(typescript@5.5.4))(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))':
+  '@vuepress/theme-default@2.0.0-rc.41(sass-loader@16.0.1(node-sass@9.0.0)(sass@1.77.8))(typescript@5.5.4)(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.7(@types/node@22.4.0)(jiti@1.21.6)(sass@1.77.8)(typescript@5.5.4))(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))':
     dependencies:
       '@vuepress/helper': 2.0.0-rc.41(typescript@5.5.4)(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.7(@types/node@22.4.0)(jiti@1.21.6)(sass@1.77.8)(typescript@5.5.4))(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))
       '@vuepress/plugin-active-header-links': 2.0.0-rc.41(typescript@5.5.4)(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.7(@types/node@22.4.0)(jiti@1.21.6)(sass@1.77.8)(typescript@5.5.4))(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))
@@ -3743,7 +3743,7 @@ snapshots:
       vue: 3.4.38(typescript@5.5.4)
       vuepress: 2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.7(@types/node@22.4.0)(jiti@1.21.6)(sass@1.77.8)(typescript@5.5.4))(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
     optionalDependencies:
-      sass-loader: 16.0.0(node-sass@9.0.0)(sass@1.77.8)
+      sass-loader: 16.0.1(node-sass@9.0.0)(sass@1.77.8)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - typescript
@@ -5366,7 +5366,7 @@ snapshots:
       scss-tokenizer: 0.4.3
       yargs: 17.7.2
 
-  sass-loader@16.0.0(node-sass@9.0.0)(sass@1.77.8):
+  sass-loader@16.0.1(node-sass@9.0.0)(sass@1.77.8):
     dependencies:
       neo-async: 2.6.2
     optionalDependencies:
