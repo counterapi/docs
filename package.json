@@ -21,7 +21,7 @@
     "@vuepress/plugin-nprogress": "2.0.0-rc.47",
     "@vuepress/plugin-palette": "2.0.0-rc.0",
     "@vuepress/plugin-search": "2.0.0-rc.47",
-    "@vuepress/theme-default": "2.0.0-rc.47",
+    "@vuepress/theme-default": "2.0.0-rc.49",
     "@vuepress/utils": "2.0.0-rc.2",
     "autoprefixer": "^10.4.16",
     "axios": "^1.0.0",
