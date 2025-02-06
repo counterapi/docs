@@ -49,7 +49,7 @@ importers:
         version: 3.1.1(rollup@4.32.0)
       flowbite-vue:
         specifier: 0.1.7
-        version: 0.1.7(tailwindcss@4.0.3)(vue@3.5.13(typescript@5.7.3))
+        version: 0.1.7(tailwindcss@4.0.4)(vue@3.5.13(typescript@5.7.3))
       node-sass:
         specifier: ^9.0.0
         version: 9.0.0
@@ -61,7 +61,7 @@ importers:
         version: 16.0.4(node-sass@9.0.0)
       tailwindcss:
         specifier: ^4.0.0
-        version: 4.0.3
+        version: 4.0.4
       typescript:
         specifier: ^5.0.0
         version: 5.7.3
@@ -2432,8 +2432,8 @@ packages:
   tailwind-merge@2.3.0:
     resolution: {integrity: sha512-vkYrLpIP+lgR0tQCG6AP7zZXCTLc1Lnv/CCRT3BqJ9CZ3ui2++GPaGb1x/ILsINIMSYqqvrpqjUFsMNLlW99EA==}
 
-  tailwindcss@4.0.3:
-    resolution: {integrity: sha512-ImmZF0Lon5RrQpsEAKGxRvHwCvMgSC4XVlFRqmbzTEDb/3wvin9zfEZrMwgsa3yqBbPqahYcVI6lulM2S7IZAA==}
+  tailwindcss@4.0.4:
+    resolution: {integrity: sha512-/ezDLEkOLf1lXkr9F2iI5BHJbexJpty5zkV2B8bGHCqAdbc9vk85Jgdkq+ZOvNkNPa3yAaqJ8DjRt584Bc84kw==}
 
   tar@6.2.1:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
@@ -4344,7 +4344,7 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  flowbite-vue@0.1.7(tailwindcss@4.0.3)(vue@3.5.13(typescript@5.7.3)):
+  flowbite-vue@0.1.7(tailwindcss@4.0.4)(vue@3.5.13(typescript@5.7.3)):
     dependencies:
       '@vueuse/core': 10.10.0(vue@3.5.13(typescript@5.7.3))
       classnames: 2.5.1
@@ -4353,7 +4353,7 @@ snapshots:
       lodash-es: 4.17.21
       nanoid: 5.0.9
       tailwind-merge: 2.3.0
-      tailwindcss: 4.0.3
+      tailwindcss: 4.0.4
       vue: 3.5.13(typescript@5.7.3)
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -5439,7 +5439,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.26.7
 
-  tailwindcss@4.0.3: {}
+  tailwindcss@4.0.4: {}
 
   tar@6.2.1:
     dependencies:
