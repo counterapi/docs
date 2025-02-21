@@ -27,7 +27,7 @@
     "axios": "^1.0.0",
     "esm": "^3.2.25",
     "flowbite": "^3.0.0",
-    "flowbite-vue": "0.1.7",
+    "flowbite-vue": "0.1.9",
     "node-sass": "^9.0.0",
     "prettier": "^3.0.0",
     "sass-loader": "16.0.5",
