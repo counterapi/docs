@@ -49,7 +49,7 @@ importers:
         version: 3.1.2(rollup@4.40.1)
       flowbite-vue:
         specifier: 0.2.1
-        version: 0.2.1(axios@1.9.0)(postcss@8.5.3)(rollup@4.40.1)(tailwindcss@4.1.5)(typescript@5.8.3)(vite@5.0.13(@types/node@22.15.3)(lightningcss@1.29.2))(vue@3.5.13(typescript@5.8.3))
+        version: 0.2.1(axios@1.9.0)(postcss@8.5.3)(rollup@4.40.1)(tailwindcss@4.1.6)(typescript@5.8.3)(vite@5.0.13(@types/node@22.15.3)(lightningcss@1.29.2))(vue@3.5.13(typescript@5.8.3))
       node-sass:
         specifier: ^9.0.0
         version: 9.0.0
@@ -61,7 +61,7 @@ importers:
         version: 16.0.5(node-sass@9.0.0)
       tailwindcss:
         specifier: ^4.0.0
-        version: 4.1.5
+        version: 4.1.6
       typescript:
         specifier: ^5.0.0
         version: 5.8.3
@@ -2779,6 +2779,9 @@ packages:
   tailwindcss@4.1.5:
     resolution: {integrity: sha512-nYtSPfWGDiWgCkwQG/m+aX83XCwf62sBgg3bIlNiiOcggnS1x3uVRDAuyelBFL+vJdOPPCGElxv9DjHJjRHiVA==}
 
+  tailwindcss@4.1.6:
+    resolution: {integrity: sha512-j0cGLTreM6u4OWzBeLBpycK0WIh8w7kSwcUsQZoGLHZ7xDTdM69lN64AgoIEEwFi0tnhs4wSykUa5YWxAzgFYg==}
+
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
@@ -4861,7 +4864,7 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  flowbite-vue@0.2.1(axios@1.9.0)(postcss@8.5.3)(rollup@4.40.1)(tailwindcss@4.1.5)(typescript@5.8.3)(vite@5.0.13(@types/node@22.15.3)(lightningcss@1.29.2))(vue@3.5.13(typescript@5.8.3)):
+  flowbite-vue@0.2.1(axios@1.9.0)(postcss@8.5.3)(rollup@4.40.1)(tailwindcss@4.1.6)(typescript@5.8.3)(vite@5.0.13(@types/node@22.15.3)(lightningcss@1.29.2))(vue@3.5.13(typescript@5.8.3)):
     dependencies:
       '@tailwindcss/postcss': 4.1.5
       '@tailwindcss/vite': 4.1.5(vite@5.0.13(@types/node@22.15.3)(lightningcss@1.29.2))
@@ -4874,7 +4877,7 @@ snapshots:
       nanoid: 5.1.5
       postcss-prefix-selector: 2.1.1(postcss@8.5.3)
       tailwind-merge: 3.2.0
-      tailwindcss: 4.1.5
+      tailwindcss: 4.1.6
       vue: 3.5.13(typescript@5.8.3)
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -6142,6 +6145,8 @@ snapshots:
   tailwind-merge@3.2.0: {}
 
   tailwindcss@4.1.5: {}
+
+  tailwindcss@4.1.6: {}
 
   tapable@2.2.1: {}
 
