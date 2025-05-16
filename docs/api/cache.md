@@ -2,10 +2,10 @@
 
 The Counter API incorporates a caching mechanism to deliver exceptionally fast response times. Caching is activated for the following API paths:
 
-| Path                        |Caching| Duration   |
-|-----------------------------|---|------------|
-| `/v1/:namespace/:name/`     |Yes| `1` minute |
-| `/v1/:namespace/:name/list` |Yes| `1` hour   |
+| Path                        |Caching| Duration     |
+|-----------------------------|---|--------------|
+| `/v1/:namespace/:name/`     |Yes| `10` minutes |
+| `/v1/:namespace/:name/list` |Yes| `24` hours   |
 
 
 ## Why do we need caching?
