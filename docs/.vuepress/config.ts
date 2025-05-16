@@ -49,7 +49,7 @@ export default {
   ],
   dest: "dist",
   theme: defaultTheme({
-    repo: "https://github.com/counterapi",
+    repo: "https://github.com/counterapi/docs",
     editLinks: false,
     docsDir: "",
     lastUpdated: false,
