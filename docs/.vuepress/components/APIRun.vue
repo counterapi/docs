@@ -2,7 +2,7 @@
   <section>
     <div class="columns-1">
       <div class="w-full">
-        <Button
+        <FwbButton
             size="md"
             color="default"
             :loading="loading"
@@ -17,7 +17,7 @@
                     clip-rule="evenodd"></path>
             </svg>
           </template>
-        </Button>
+        </FwbButton>
       </div>
       <div v-if="result" class="w-full bg-gray-100 dark:bg-gray-900 rounded-md border-1 border-blue-800 sm p-3 mt-3">
         <p class="text-lg font-semibold mb-0">Result</p>
@@ -29,7 +29,7 @@
 
 <script>
 import axios from "axios";
-import { Button,  } from 'flowbite-vue'
+import { FwbButton,  } from 'flowbite-vue'
 
 const BASE_URL = "https://api.counterapi.dev/v1/";
 
@@ -53,7 +53,7 @@ export default {
     type: String,
   },
   components: {
-    Button,
+    FwbButton,
   },
   data() {
     return {

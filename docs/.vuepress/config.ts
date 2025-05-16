@@ -7,7 +7,7 @@ import { nprogressPlugin } from '@vuepress/plugin-nprogress'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { sitemapPlugin } from "vuepress-plugin-sitemap2";
 import { seoPlugin } from "vuepress-plugin-seo2";
-import tailwindcss from 'tailwindcss'
+import tailwindcss from '@tailwindcss/postcss'
 
 export default {
   title: "Counter API",
