@@ -28,7 +28,7 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material
-      - name: Create Site directory
-        run: |
-          mkdir /site
+#      - name: Create Site directory
+#        run: |
+#          mkdir site
       - run: mkdocs gh-deploy --force
