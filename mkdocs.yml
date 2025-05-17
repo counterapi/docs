@@ -8,7 +8,7 @@ edit_uri: https://github.com/counterapi/docs/blob/main/docs/
 
 docs_dir: docs
 site_dir: site
-copyright: Made by omegion with ❤️
+copyright: Copyright &copy; 2021 - <script>document.write(new Date().getFullYear())</script> &bull; Made by <b><a href="https://github.com/omegion" target="_blank">omegion</a></b> with ❤️
 
 theme:
   name: material
@@ -39,6 +39,7 @@ theme:
     - navigation.expand
     - navigation.footer
     - toc.follow
+    - content.tooltips
 extra_css:
   - stylesheets/extra.css
 
