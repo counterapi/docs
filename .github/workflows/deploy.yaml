@@ -2,8 +2,7 @@ name: ci
 on:
   push:
     branches:
-      - mkdocs
-#      - master
+      - master
 permissions:
   contents: write
 jobs:
