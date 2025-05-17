@@ -1,3 +1,5 @@
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
 # Endpoints
 
 Counter API does not have any authentication. You do not need any token, or a password to use it. The API address
@@ -24,7 +26,12 @@ name | required | description
 curl -X GET https://api.counterapi.dev/v1/test/test/up
 ```
 
-<APIRun type="up" />
+<div id="up">
+    <a v-on:click="Run('up')" class="md-button md-button--primary">Run →</a>
+    <pre>
+        <code v-if="result" class="language-shell">{{result}}</code>
+    </pre>
+</div>
 
 ## Counter Down
 
@@ -44,7 +51,12 @@ name | required | description
 curl -X GET https://api.counterapi.dev/v1/test/test/down
 ```
 
-<APIRun type="down" />
+<div id="down">
+    <a v-on:click="Run('down')" class="md-button md-button--primary">Run →</a>
+    <pre>
+        <code v-if="result" class="language-shell">{{result}}</code>
+    </pre>
+</div>
 
 ## Set Counter
 
@@ -64,7 +76,12 @@ name | required | description
 curl -X GET https://api.counterapi.dev/v1/test/test/?count=10
 ```
 
-<APIRun type="set" />
+<div id="set">
+    <a v-on:click="Run('set?count=10')" class="md-button md-button--primary">Run →</a>
+    <pre>
+        <code v-if="result" class="language-shell">{{result}}</code>
+    </pre>
+</div>
 
 ## Counter Get
 
@@ -83,7 +100,12 @@ name | required | description
 curl -X GET https://api.counterapi.dev/v1/test/test
 ```
 
-<APIRun type="" />
+<div id="get">
+    <a v-on:click="Run('')" class="md-button md-button--primary">Run →</a>
+    <pre>
+        <code v-if="result" class="language-shell">{{result}}</code>
+    </pre>
+</div>
 
 ## Counts List
 
@@ -104,4 +126,39 @@ name | required | description
 curl -X GET https://api.counterapi.dev/v1/test/test/list?group_by=day
 ```
 
-<APIRun type="list" />
+<div id="list">
+    <a v-on:click="Run('list')" class="md-button md-button--primary">Run →</a>
+    <pre>
+        <code v-if="result" class="language-shell">{{result}}</code>
+    </pre>
+</div>
+
+---
+
+
+<script>
+  const { createApp, ref } = Vue
+  const App = {
+    setup() {
+      const result = ref('')
+      const baseURL = ref('https://api.counterapi.dev/v1/')
+      const Run = function(apiType) {
+        fetch(baseURL.value + 'test/test/' + apiType)
+          .then(response => response.json())
+          .then(data => {
+            result.value = JSON.stringify(data, null, 2)
+            setTimeout(() => result.value = '', 10000);
+          })
+      }
+      return {
+        result,
+        Run
+      }
+    }
+  }
+  createApp(App).mount('#up')
+  createApp(App).mount('#down')
+  createApp(App).mount('#set')
+  createApp(App).mount('#get')
+  createApp(App).mount('#list')
+</script>
