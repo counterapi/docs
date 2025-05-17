@@ -1,9 +1,0 @@
-{
-  "include": [
-    ".vuepress/**/*.ts",
-    ".vuepress/**/*.vue"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
-}
