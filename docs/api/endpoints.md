@@ -27,7 +27,10 @@ curl -X GET https://api.counterapi.dev/v1/test/test/up
 ```
 
 <div id="up">
-    <a v-on:click="Run('up')" class="md-button md-button--primary">Run →</a>
+    <a v-on:click="Run('up')" class="md-button" :class="{'md-button--primary': !loading}">
+        <span v-if="loading">Loading...</span>
+        <span v-else>Run →</span>
+    </a>
     <pre>
         <code v-if="result" class="language-shell">{{result}}</code>
     </pre>
@@ -52,7 +55,10 @@ curl -X GET https://api.counterapi.dev/v1/test/test/down
 ```
 
 <div id="down">
-    <a v-on:click="Run('down')" class="md-button md-button--primary">Run →</a>
+    <a v-on:click="Run('down')" class="md-button" :class="{'md-button--primary': !loading}">
+        <span v-if="loading">Loading...</span>
+        <span v-else>Run →</span>
+    </a>
     <pre>
         <code v-if="result" class="language-shell">{{result}}</code>
     </pre>
@@ -77,7 +83,10 @@ curl -X GET https://api.counterapi.dev/v1/test/test/?count=10
 ```
 
 <div id="set">
-    <a v-on:click="Run('set?count=10')" class="md-button md-button--primary">Run →</a>
+    <a v-on:click="Run('set?count=10')" class="md-button" :class="{'md-button--primary': !loading}">
+        <span v-if="loading">Loading...</span>
+        <span v-else>Run →</span>
+    </a>
     <pre>
         <code v-if="result" class="language-shell">{{result}}</code>
     </pre>
@@ -101,7 +110,10 @@ curl -X GET https://api.counterapi.dev/v1/test/test
 ```
 
 <div id="get">
-    <a v-on:click="Run('')" class="md-button md-button--primary">Run →</a>
+    <a v-on:click="Run('')" class="md-button" :class="{'md-button--primary': !loading}">
+        <span v-if="loading">Loading...</span>
+        <span v-else>Run →</span>
+    </a>
     <pre>
         <code v-if="result" class="language-shell">{{result}}</code>
     </pre>
@@ -127,7 +139,10 @@ curl -X GET https://api.counterapi.dev/v1/test/test/list?group_by=day
 ```
 
 <div id="list">
-    <a v-on:click="Run('list')" class="md-button md-button--primary">Run →</a>
+    <a v-on:click="Run('list')" class="md-button" :class="{'md-button--primary': !loading}">
+        <span v-if="loading">Loading...</span>
+        <span v-else>Run →</span>
+    </a>
     <pre>
         <code v-if="result" class="language-shell">{{result}}</code>
     </pre>
@@ -141,17 +156,21 @@ curl -X GET https://api.counterapi.dev/v1/test/test/list?group_by=day
   const App = {
     setup() {
       const result = ref('')
+      const loading = ref(false)
       const baseURL = ref('https://api.counterapi.dev/v1/')
       const Run = function(apiType) {
+        loading.value = true
         fetch(baseURL.value + 'test/test/' + apiType)
           .then(response => response.json())
           .then(data => {
             result.value = JSON.stringify(data, null, 2)
             setTimeout(() => result.value = '', 10000);
+            loading.value = false
           })
       }
       return {
         result,
+        loading,
         Run
       }
     }
