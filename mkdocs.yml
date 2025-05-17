@@ -7,7 +7,7 @@ repo_url: https://github.com/counterapi/api/
 edit_uri: https://github.com/counterapi/docs/blob/main/docs/
 
 docs_dir: docs
-site_dir: /site
+site_dir: site
 
 theme:
   name: material
