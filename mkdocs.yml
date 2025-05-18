@@ -40,6 +40,8 @@ theme:
     - navigation.footer
     - toc.follow
     - content.tooltips
+    - search.suggest
+    - search.highlight
 extra_css:
   - stylesheets/extra.css
 
