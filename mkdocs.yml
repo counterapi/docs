@@ -4,7 +4,7 @@ site_description: CounterAPI is a free and open-source API for counting things.
 site_author: omegion
 
 repo_url: https://github.com/counterapi/api/
-edit_uri: https://github.com/counterapi/docs/blob/main/docs/
+edit_uri: https://github.com/counterapi/docs/blob/master/docs/
 
 docs_dir: docs
 site_dir: site
@@ -42,6 +42,7 @@ theme:
     - content.tooltips
     - search.suggest
     - search.highlight
+    - content.action.edit
 extra_css:
   - stylesheets/extra.css
 
