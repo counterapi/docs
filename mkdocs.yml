@@ -42,7 +42,6 @@ theme:
     - content.tooltips
     - search.suggest
     - search.highlight
-    - content.action.edit
 extra_css:
   - stylesheets/extra.css
 
