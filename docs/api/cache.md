@@ -18,5 +18,7 @@ To improve the performance of the Counter API, we have implemented a `Redis` cac
 
 ## Can I disable caching?
 
-
 Currently, there is no plan to implement the ability to disable caching in the Counter API. However, we are open to adding this feature in the future if there is a need for it. If you have a specific use case where you need to disable caching, please feel free to open an issue on our [GitHub repository](https://github.com/counterapi/api). so that we can discuss the implementation details.
+
+---
+

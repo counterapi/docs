@@ -37,3 +37,6 @@ This is a significant advantage for simple use cases, as it allows developers to
 - Choose **v1** only if you need a simple, public counter with minimal requirements
 
 For more information about rate limits, see our [Rate Limits](rate-limit.md) documentation.
+
+---
+
