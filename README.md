@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://vuepress.vuejs.org/" target="_blank">
-    <img width="180" src="https://raw.githubusercontent.com/counterapi/docs/master/src/.vuepress/public/favicons/apple-icon-180x180.png" alt="logo">
+  <a href="https://counterapi.dev/" target="_blank">
+    <img width="180" src="https://raw.githubusercontent.com/counterapi/docs/refs/heads/main/docs/assets/img/logo.png" alt="logo">
   </a>
 </p>
 
@@ -12,11 +12,10 @@
 
 ## Documentation
 
-Check out our docs at https://counterapi.dev/.
+Check out our docs at https://docs.counterapi.dev/.
 
 ```bash
-pnpm install # install all dependencies
-pnpm dev  # serves VuePress' own docs with itself
+make run
 ```
 
 ## License
