@@ -8,23 +8,23 @@ Counter API has different rate limits depending on which version of the API you'
 
 ### V1 Endpoints
 
-V1 endpoints have a rate limit of `30` requests per minute per IP address. For detailed documentation on V1 endpoints, see the [V1 Endpoints Documentation](endpoints/v1.md).
+V1 endpoints have a rate limit of `30` requests per minute per URL path. For detailed documentation on V1 endpoints, see the [V1 Endpoints Documentation](endpoints/v1.md).
 
 ### V2 Endpoints
 
-V2 endpoints have a higher rate limit of `600` requests per minute per IP address. **Note: V2 endpoints require user signup to access.** For comprehensive documentation on V2 endpoints, see the [V2 Endpoints Documentation](endpoints/v2.md).
+V2 endpoints have a higher rate limit of `600` requests per minute per URL path. **Note: V2 endpoints require user signup to access.** For comprehensive documentation on V2 endpoints, see the [V2 Endpoints Documentation](endpoints/v2.md).
 
 ## How Rate Limiting Works
 
 CounterAPI implements a sliding window rate limiting approach to manage API traffic efficiently. Here's how it works:
 
-### IP-Based Identification
+### URL Path-Based Identification
 
-For V1 endpoints, the system identifies users by their IP address. This means all requests coming from the same IP address share the same rate limit allocation. While this approach is simple, it can be limiting for users behind shared IPs or corporate networks.
+The system identifies requests based on the URL path. This means all requests to the same endpoint path share the same rate limit allocation, regardless of which client is making the request. This approach provides more granular and fair distribution of rate limits across different API operations.
 
 ### Authentication-Based Identification
 
-For V2 endpoints, the system primarily identifies users by their API key, which provides a more accurate way to track and allocate rate limits. This ensures that your rate limit is tied to your account rather than your network location.
+For V2 endpoints, the system also considers the API key when allocating rate limits, which provides an additional layer of request tracking. This ensures that your rate limit is tied to both your account and the specific endpoints you're accessing.
 
 ### Sliding Window Implementation
 
@@ -40,7 +40,6 @@ When you make requests to the API, the response includes headers that help you t
 
 - `X-RateLimit-Limit`: Your total allocation (30 or 600 requests depending on API version)
 - `X-RateLimit-Remaining`: Number of requests remaining in the current window
-- `X-RateLimit-Reset`: Time in seconds until your rate limit fully resets
 
 ### Handling Rate Limit Exceeded
 
