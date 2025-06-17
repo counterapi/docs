@@ -45,7 +45,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Create CNAME file for GitHub Pages
-        run: echo "docscounterapi.dev" > ./site/CNAME
+        run: echo "docs.counterapi.dev" > ./site/CNAME
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

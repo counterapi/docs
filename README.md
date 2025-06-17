@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://vuepress.vuejs.org/" target="_blank">
-    <img width="180" src="https://raw.githubusercontent.com/counterapi/docs/master/src/.vuepress/public/favicons/apple-icon-180x180.png" alt="logo">
+  <a href="https://docs.counterapi.dev/" target="_blank">
+    <img width="180" src="https://counterapi.dev/img/logo.png" alt="logo">
   </a>
 </p>
 

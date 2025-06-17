@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: img/counterapi-logo.svg
+heroImage: img/logo.png
 tagline: Documentation of Counter API
 actions:
   - text: Get Started →

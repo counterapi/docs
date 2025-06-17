@@ -1,5 +1,5 @@
 site_name: CounterAPI
-site_url: https://counterapi.dev
+site_url: https://counterapi.dev/
 site_description: CounterAPI is a free and open-source API for counting things.
 site_author: omegion
 
@@ -12,7 +12,7 @@ copyright: Copyright &copy; 2021 - <script>document.write(new Date().getFullYear
 
 theme:
   name: material
-  logo: assets/img/logo.svg
+  logo: assets/img/logo.png
   favicon: assets/favicons/favicon.ico
   palette:
     # Palette toggle for automatic mode
@@ -51,6 +51,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/omegion
       name: Github Profile of Omegion
+  version:
+    default: stable
+    provider: mike
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -72,3 +75,11 @@ plugins:
       enable_creation_date: true
   - git-committers:
       repository: counterapi/docs
+  - mike:
+      alias_type: symlink
+      redirect_template: null
+      deploy_prefix: ''
+      canonical_version: null
+      version_selector: true
+      css_dir: css
+      javascript_dir: js
