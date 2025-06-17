@@ -49,28 +49,13 @@ jobs:
       - name: Deploy v1.0 docs
         if: github.ref == 'refs/heads/v1.0'
         run: |
-          mike deploy v1.0 -p --update-aliases --ignore-remote-status
+          mike deploy v1.0 -p --update-aliases --ignore-remote-status --force
 
       - name: Deploy v2.0 docs
-        if: github.ref == 'refs/heads/v2.0'
+        if: github.ref == 'refs/heads/v2.0' || github.ref == 'refs/heads/main'
         run: |
-          mike deploy v2.0 latest -p --update-aliases --ignore-remote-status
-          mike set-default latest --ignore-remote-status
-
-      - name: Deploy from main to v2.0 (latest)
-        if: github.ref == 'refs/heads/main'
-        run: |
-          mike deploy v2.0 latest -p --update-aliases --ignore-remote-status
+          mike deploy v2.0 latest -p --update-aliases --ignore-remote-status --force
           mike set-default latest --ignore-remote-status
 
       - name: Create CNAME file for GitHub Pages
         run: echo "docs.counterapi.dev" > ./site/CNAME
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./site
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
