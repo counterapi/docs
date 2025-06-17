@@ -3,7 +3,7 @@
 # Endpoints
 
 Counter API does not have any authentication. You do not need any token, or a password to use it. The API address
-is [https://api.counterapi.dev/v1](https://api.counterapi.dev/v1)
+is [https://api.counterapi.dev/v2](https://api.counterapi.dev/v2)
 
 <br/>
 
@@ -11,7 +11,7 @@ You can find all endpoints listed below. You can simply run the given example qu
 
 ## Counter Up
 
-You can count up with given counter name. The endpoint is `https://api.counterapi.dev/v1/:namespace/:name/up`.
+You can count up with given counter name. The endpoint is `https://api.counterapi.dev/v2/:namespace/:name/up`.
 
 ### Parameters
 
@@ -23,7 +23,7 @@ name | required | description
 ### Test
 
 ```shell
-curl -X GET https://api.counterapi.dev/v1/test/test/up
+curl -X GET https://api.counterapi.dev/v2/test/test/up
 ```
 
 <div id="up">
@@ -38,7 +38,7 @@ curl -X GET https://api.counterapi.dev/v1/test/test/up
 
 ## Counter Down
 
-You can count down with given counter name. The endpoint is `https://api.counterapi.dev/v1/:namespace/:name/down`.
+You can count down with given counter name. The endpoint is `https://api.counterapi.dev/v2/:namespace/:name/down`.
 
 ### Parameters
 
@@ -51,7 +51,7 @@ name | required | description
 ### Test
 
 ```shell
-curl -X GET https://api.counterapi.dev/v1/test/test/down
+curl -X GET https://api.counterapi.dev/v2/test/test/down
 ```
 
 <div id="down">
@@ -66,7 +66,7 @@ curl -X GET https://api.counterapi.dev/v1/test/test/down
 
 ## Set Counter
 
-You can set counter with given counter name and count number. The endpoint is `https://api.counterapi.dev/v1/:namespace/:name/set`.
+You can set counter with given counter name and count number. The endpoint is `https://api.counterapi.dev/v2/:namespace/:name/set`.
 
 ### Parameters
 
@@ -79,7 +79,7 @@ name | required | description
 ### Test
 
 ```shell
-curl -X GET https://api.counterapi.dev/v1/test/test/?count=10
+curl -X GET https://api.counterapi.dev/v2/test/test/?count=10
 ```
 
 <div id="set">
@@ -94,7 +94,7 @@ curl -X GET https://api.counterapi.dev/v1/test/test/?count=10
 
 ## Counter Get
 
-You can count get with given counter name. The endpoint is `https://api.counterapi.dev/v1/:namespace/:name/`.
+You can count get with given counter name. The endpoint is `https://api.counterapi.dev/v2/:namespace/:name/`.
 
 ### Parameters
 
@@ -106,7 +106,7 @@ name | required | description
 ### Test
 
 ```shell
-curl -X GET https://api.counterapi.dev/v1/test/test
+curl -X GET https://api.counterapi.dev/v2/test/test
 ```
 
 <div id="get">
@@ -121,7 +121,7 @@ curl -X GET https://api.counterapi.dev/v1/test/test
 
 ## Counts List
 
-You can get count list with given counter name. The endpoint is `https://api.counterapi.dev/v1/:namespace/:name/list`.
+You can get count list with given counter name. The endpoint is `https://api.counterapi.dev/v2/:namespace/:name/list`.
 
 ### Parameters
 
@@ -135,7 +135,7 @@ name | required | description
 ### Test
 
 ```shell
-curl -X GET https://api.counterapi.dev/v1/test/test/list?group_by=day
+curl -X GET https://api.counterapi.dev/v2/test/test/list?group_by=day
 ```
 
 <div id="list">
@@ -157,7 +157,7 @@ curl -X GET https://api.counterapi.dev/v1/test/test/list?group_by=day
     setup() {
       const result = ref('')
       const loading = ref(false)
-      const baseURL = ref('https://api.counterapi.dev/v1/')
+      const baseURL = ref('https://api.counterapi.dev/v2/')
       const Run = function(apiType) {
         loading.value = true
         fetch(baseURL.value + 'test/test/' + apiType)
