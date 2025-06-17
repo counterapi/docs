@@ -5,11 +5,5 @@ The Counter API does not require any authentication or authorization to use. Thi
 
 This is a significant advantage of the Counter API, as it allows developers to easily integrate count data into their applications without the need for complex authentication and authorization systems.
 
-## API Versions
-
-We currently support two API versions:
-
-- **V1**: [https://api.counterapi.dev/v1](https://api.counterapi.dev/v1)
-- **V2**: [https://api.counterapi.dev/v2](https://api.counterapi.dev/v2)
-
-V2 is the latest version and recommended for new projects. V1 is maintained for backward compatibility.
+The API
+address is [https://api.counterapi.dev/v1](https://api.counterapi.dev/v1)
