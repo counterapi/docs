@@ -15,7 +15,10 @@ nav:
   - Home: index.md
   - API:
     - Overview: api/index.md
-    - Endpoints: api/endpoints.md
+    - Endpoints:
+      - Overview: api/endpoints.md
+      - V2 (Recommended): api/endpoints/v2.md
+      - V1 (Legacy): api/endpoints/v1.md
     - Rate Limits: api/rate-limit.md
     - Cache: api/cache.md
   - Go:
