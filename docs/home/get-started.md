@@ -25,3 +25,4 @@ To use it, open up your terminal in the desired directory and run the following 
     ``` shell
     npm install counterapi
     ```
+---

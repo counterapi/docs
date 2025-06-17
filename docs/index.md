@@ -36,3 +36,5 @@ The Counter API is a powerful REST API that allows developers to store and retri
     A fundamental yet robust REST API powered by Go.
 
 </div>
+
+---

@@ -12,7 +12,10 @@ copyright: Copyright &copy; 2021 - <script>document.write(new Date().getFullYear
 
 # Navigation structure
 nav:
-  - Home: index.md
+  - Home:
+    - Overview: index.md
+    - Get Started: home/get-started.md
+
   - API:
     - Overview: api/index.md
     - Endpoints:
@@ -21,20 +24,17 @@ nav:
       - V1 (Legacy): api/endpoints/v1.md
     - Rate Limits: api/rate-limit.md
     - Cache: api/cache.md
-  - Go:
-    - Overview: go/README.md
-    - Quick Start: go/quick-start.md
-    - Get Started: go/get-started.md
-    - Counter Name: go/counter-name.md
-  - Guide:
-    - Overview: guide/README.md
-    - Get Started: guide/get-started.md
   - JavaScript:
     - Overview: javascript/README.md
     - Quick Start: javascript/quick-start.md
     - Get Started: javascript/get-started.md
     - Counter Name Hashing: javascript/counter-name-hashing.md
     - Count List: javascript/count-list.md
+  - Go:
+    - Overview: go/README.md
+    - Quick Start: go/quick-start.md
+    - Get Started: go/get-started.md
+    - Counter Name: go/counter-name.md
 
 theme:
   name: material
