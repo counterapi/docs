@@ -10,6 +10,29 @@ docs_dir: docs
 site_dir: site
 copyright: Copyright &copy; 2021 - <script>document.write(new Date().getFullYear())</script> &bull; Made by <b><a href="https://github.com/omegion" target="_blank">omegion</a></b> with ❤️
 
+# Navigation structure
+nav:
+  - Home: index.md
+  - API:
+    - Overview: api/index.md
+    - Endpoints: api/endpoints.md
+    - Rate Limits: api/rate-limit.md
+    - Cache: api/cache.md
+  - Go:
+    - Overview: go/README.md
+    - Quick Start: go/quick-start.md
+    - Get Started: go/get-started.md
+    - Counter Name: go/counter-name.md
+  - Guide:
+    - Overview: guide/README.md
+    - Get Started: guide/get-started.md
+  - JavaScript:
+    - Overview: javascript/README.md
+    - Quick Start: javascript/quick-start.md
+    - Get Started: javascript/get-started.md
+    - Counter Name Hashing: javascript/counter-name-hashing.md
+    - Count List: javascript/count-list.md
+
 theme:
   name: material
   logo: assets/img/logo.png
@@ -36,6 +59,8 @@ theme:
         name: Switch to system preference
 
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.expand
     - navigation.footer
     - toc.follow
@@ -72,3 +97,4 @@ plugins:
       enable_creation_date: true
   - git-committers:
       repository: counterapi/docs
+
