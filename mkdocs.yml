@@ -82,7 +82,7 @@ extra:
   generator: false
   analytics:
     provider: google
-    property: G-C585YQ9GVB
+    property: G-069ZN35273
     feedback:
       title: Was this page helpful?
       ratings:
