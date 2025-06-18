@@ -66,6 +66,7 @@ theme:
         name: Switch to system preference
 
   features:
+    - navigation.top
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.expand
