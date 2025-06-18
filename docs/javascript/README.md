@@ -9,4 +9,4 @@ The API is available in both JavaScript and Go programming languages, making it 
 
 ## Repository
 
-[Counter API Javascript Library](https://github.com/counterapi/counter-js)
+[Counter API Javascript Library](https://github.com/counterapi/counter.js)
