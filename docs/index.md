@@ -3,7 +3,7 @@ The Counter API is a powerful REST API that allows developers to store and retri
 
 
 <div class="center" markdown>
-[Get Started →](guide/get-started.md){ .md-button .md-button--primary } [Test API Endpoints :material-test-tube:{ .lg .middle }](api/endpoints.md){ .md-button } 
+[Get Started →](home/get-started.md){ .md-button .md-button--primary } [Test API Endpoints :material-test-tube:{ .lg .middle }](api/endpoints.md){ .md-button } 
 </div>
 
 <br>

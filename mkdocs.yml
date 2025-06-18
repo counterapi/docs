@@ -1,6 +1,6 @@
-site_name: CounterAPI
+site_name: CounterAPI Documentation
 site_url: https://counterapi.dev
-site_description: CounterAPI is a free and open-source API for counting things.
+site_description: Track user engagement and website traffic with a simple REST API. Free unlimited API with JavaScript and Go libraries. No database required, setup in 1 minute.
 site_author: omegion
 
 repo_url: https://github.com/counterapi/api/
@@ -22,18 +22,22 @@ nav:
       - Overview: api/endpoints.md
       - V2 (Recommended): api/endpoints/v2.md
       - V1 (Legacy): api/endpoints/v1.md
+    - Authentication: api/authentication.md
     - Rate Limits: api/rate-limit.md
     - Cache: api/cache.md
   - JavaScript:
     - Overview: javascript/README.md
     - Quick Start: javascript/quick-start.md
     - Get Started: javascript/get-started.md
-    - Counter Name Hashing: javascript/counter-name-hashing.md
-    - Count List: javascript/count-list.md
+    - Authentication Examples: javascript/auth-examples.md
+    - Use Cases:
+      - Browser Implementation: javascript/browser.md
+      - Node.js Implementation: javascript/node.md
   - Go:
     - Overview: go/README.md
     - Quick Start: go/quick-start.md
     - Get Started: go/get-started.md
+    - Authentication Examples: go/auth-examples.md
     - Counter Name: go/counter-name.md
 
 theme:
@@ -102,4 +106,5 @@ plugins:
       enable_creation_date: true
   - git-committers:
       repository: counterapi/docs
+      token: !ENV ["GITHUB_TOKEN"]
 
