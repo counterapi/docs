@@ -106,5 +106,3 @@ plugins:
       enable_creation_date: true
   - git-committers:
       repository: counterapi/docs
-      token: !ENV ["GITHUB_TOKEN"]
-
