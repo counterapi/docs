@@ -15,7 +15,6 @@ nav:
   - Home:
     - Overview: index.md
     - Get Started: home/get-started.md
-
   - API:
     - Overview: api/index.md
     - Endpoints:
@@ -44,6 +43,7 @@ theme:
   name: material
   logo: assets/img/logo.png
   favicon: assets/favicons/favicon.ico
+  custom_dir: overrides
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -53,7 +53,9 @@ theme:
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: amber
+      scheme: pink
+      primary: pink
+      accent: pink
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -61,6 +63,8 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: pink
+      accent: pink
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
@@ -72,9 +76,11 @@ theme:
     - navigation.expand
     - navigation.footer
     - toc.follow
+    - toc.integrates
     - content.tooltips
     - search.suggest
     - search.highlight
+    - announce.dismiss
 extra_css:
   - stylesheets/extra.css
 
@@ -105,8 +111,8 @@ extra:
       make our documentation better.
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/omegion
-      name: Github Profile of Omegion
+      link: https://github.com/counterapi
+      name: Official CounterAPI GitHub Page
 markdown_extensions:
   - attr_list
   - md_in_html
