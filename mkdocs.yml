@@ -1,5 +1,5 @@
 site_name: CounterAPI Documentation
-site_url: https://counterapi.dev
+site_url: https://docs.counterapi.dev
 site_description: Track user engagement and website traffic with a simple REST API. Free unlimited API with JavaScript and Go libraries. No database required, setup in 1 minute.
 site_author: omegion
 
