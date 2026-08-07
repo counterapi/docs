@@ -52,7 +52,7 @@ func main() {
 
 ## Authentication
 
-For secure access to your counters and to use protected features, CounterAPI provides authentication via API tokens. This functionality is only available with the V2 API.
+For secure access to your counters and to use protected features, CounterAPI provides authentication via API tokens. As of **August 7, 2026**, V2 is the only available API version (the legacy V1 API has been deprecated and no longer accepts requests).
 
 To secure your counters with authentication:
 

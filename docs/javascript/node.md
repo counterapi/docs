@@ -36,7 +36,7 @@ const counter = new Counter({
 });
 ```
 
-> **Important:** The `accessToken` parameter is only available for the V2 API. Authentication is not supported in V1 API.
+> **Important:** As of **August 7, 2026**, the V2 API is the only available version — the legacy V1 API has been deprecated and no longer accepts requests.
 
 ## Simple Counter Operations
 
@@ -285,15 +285,17 @@ async function trackUserAction(userId, action) {
 }
 ```
 
-## Advanced: Using with V1 API
+## Deprecated: V1 API (no longer available)
 
-If you need to use the legacy V1 API:
+!!! danger "V1 has been retired"
+    As of **August 7, 2026**, the V1 API is deprecated and no longer available. The snippet below is kept for migration reference only — it will no longer work.
 
 ```javascript
 import { Counter } from 'counterapi';
 
+// This client configuration is no longer functional.
 const counterV1 = new Counter({
-  version: 'v1',       // Specify V1 API
+  version: 'v1',       // V1 API — deprecated
   namespace: 'my-app', // Your namespace
   debug: false,
   timeout: 5000
@@ -301,7 +303,7 @@ const counterV1 = new Counter({
 
 async function setCounterValue(name, value) {
   try {
-    // V1 API provides the 'set' method
+    // V1 API provided the 'set' method; use counter.reset(name, value) on V2 instead
     const result = await counterV1.set(name, value);
     console.log(`Counter ${name} set to ${result.value}`);
     return result;

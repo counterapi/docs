@@ -6,13 +6,13 @@ Rate limiting is a security measure that CounterAPI implements to ensure fair us
 
 Counter API has different rate limits depending on which version of the API you're using:
 
-### V1 Endpoints
+### V1 Endpoints (Deprecated)
 
-V1 endpoints have a rate limit of `30` requests per minute per URL path. For detailed documentation on V1 endpoints, see the [V1 Endpoints Documentation](endpoints/v1.md).
+V1 endpoints previously had a rate limit of `30` requests per minute per URL path. **As of August 7, 2026, V1 is deprecated and no longer available** — see the [V1 Endpoints Documentation](endpoints/v1.md) for migration notes.
 
-### V2 Endpoints
+### V2 Endpoints (Current)
 
-V2 endpoints have a higher rate limit of `600` requests per minute per URL path. **Note: V2 endpoints require user signup to access.** For comprehensive documentation on V2 endpoints, see the [V2 Endpoints Documentation](endpoints/v2.md).
+V2 endpoints have a rate limit of `600` requests per minute per URL path and are now the **only available API version**. **Note: V2 endpoints require user signup to access.** For comprehensive documentation on V2 endpoints, see the [V2 Endpoints Documentation](endpoints/v2.md).
 
 ## How Rate Limiting Works
 
@@ -38,7 +38,7 @@ Rather than using a fixed time window (which could allow request spikes at windo
 
 When you make requests to the API, the response includes headers that help you track your rate limit usage:
 
-- `X-RateLimit-Limit`: Your total allocation (30 or 600 requests depending on API version)
+- `X-RateLimit-Limit`: Your total allocation (600 requests per minute on V2)
 - `X-RateLimit-Remaining`: Number of requests remaining in the current window
 
 ### Handling Rate Limit Exceeded
@@ -56,7 +56,6 @@ To make the most of your rate limits:
 - Implement exponential backoff for retries
 - Cache frequently accessed data on your side
 - Use bulk operations where available instead of multiple single requests
-- For high-volume needs, consider upgrading to V2 endpoints with higher limits
 
 ---
 

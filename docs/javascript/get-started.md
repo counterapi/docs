@@ -24,7 +24,10 @@ yarn add counterapi
 
 ## Creating a Client
 
-### V2 API (Recommended)
+### V2 API (Current)
+
+!!! danger "V1 is deprecated"
+    As of **August 7, 2026**, the V1 API is no longer available. The V2 API (below) is the only supported version.
 
 ```javascript
 import { Counter } from 'counterapi';
@@ -34,26 +37,26 @@ const counter = new Counter({
   workspace: 'my-workspace',  // Your workspace name
   debug: false,               // Optional: Enable debug logging
   timeout: 5000,              // Optional: Request timeout in ms (default: 10000)
-  accessToken: 'your-token'   // Optional: Authentication token for API requests (V2 API only)
+  accessToken: 'your-token'   // Optional: Authentication token for API requests
 });
 ```
 
-> **Important:** The `accessToken` parameter is only available for the V2 API. Authentication is not supported in V1 API.
-
-### V1 API (Legacy)
+### V1 API (Deprecated — no longer available)
 
 ```javascript
+// The following configuration is no longer functional as of August 7, 2026.
+// It is shown for migration reference only.
 import { Counter } from 'counterapi';
 
-// Create a client for the V1 API
 const counterV1 = new Counter({
-  version: 'v1',       // Specify V1 API
+  version: 'v1',       // V1 API — deprecated, requests will fail
   namespace: 'my-app', // Your namespace
   debug: false,        // Optional: Enable debug logging
   timeout: 5000        // Optional: Request timeout in ms (default: 10000)
-  // Note: accessToken is not supported in V1 API
 });
 ```
+
+Migrate by switching to the V2 client shown above, using `workspace` instead of `namespace` and an `accessToken` for authentication.
 
 ## Basic Operations
 
@@ -105,10 +108,11 @@ try {
 }
 ```
 
-### Setting a Counter Value (V1 API only)
+### Setting a Counter Value (Deprecated — V1 API only)
 
 ```javascript
-// Set a counter to a specific value
+// This V1-only method is no longer functional as of August 7, 2026.
+// Use counterV2.reset('page-views', 100) instead.
 try {
   const counter = await counterV1.set('page-views', 100);
   console.log(`Counter set to: ${counter.value}`);
@@ -173,5 +177,5 @@ try {
 - Explore implementation examples for different environments:
   - [Browser Implementation](browser.md) - Learn how to use CounterAPI in web browsers
   - [Node.js Implementation](node.md) - Discover server-side implementation patterns
-- Learn how to [secure your counters with authentication](../api/authentication.md) (V2 API only)
+- Learn how to [secure your counters with authentication](../api/authentication.md)
 - Check out the full [API documentation](../api/index.md) for more details 

@@ -7,7 +7,7 @@ The CounterAPI Go client is a powerful, native Go library that allows you to int
 * **Native Go Implementation**: Built specifically for Go applications
 * **Thread-safe**: Safe for concurrent use
 * **Context Support**: All API methods accept a context parameter
-* **Multiple API versions**: Compatible with both v1 and v2 CounterAPI endpoints
+* **API version**: Compatible with the v2 CounterAPI endpoints — the only version available since v1 was deprecated on August 7, 2026
 * **Error Handling**: Comprehensive error types and messages
 * **Authentication**: Secure your counters with API tokens (V2 API only)
 

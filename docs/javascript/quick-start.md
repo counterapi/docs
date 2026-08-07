@@ -16,7 +16,7 @@ npm install counterapi
 <script type="module">
   import { Counter } from 'https://cdn.jsdelivr.net/npm/counterapi/dist/counter.esm.min.js';
   
-  // Create a counter client (V2 API)
+  // Create a counter client (V2 API — the only available version)
   const counter = new Counter({ workspace: 'my-workspace' });
   
   // Increment a page view counter

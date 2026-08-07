@@ -19,8 +19,8 @@ nav:
     - Overview: api/index.md
     - Endpoints:
       - Overview: api/endpoints.md
-      - V2 (Recommended): api/endpoints/v2.md
-      - V1 (Legacy): api/endpoints/v1.md
+      - V2: api/endpoints/v2.md
+      - V1 (Deprecated): api/endpoints/v1.md
     - Authentication: api/authentication.md
     - Rate Limits: api/rate-limit.md
     - Cache: api/cache.md

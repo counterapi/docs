@@ -11,7 +11,7 @@ CounterAPI offers authentication to:
 - Unlock additional features and higher rate limits
 - Track usage across multiple applications with a single account
 
-> **Note:** Authentication is only available with the V2 API. The legacy V1 API does not support authentication.
+> **Note:** Authentication is required for the V2 API, which is now the only available CounterAPI version. The legacy V1 API did not support authentication and was deprecated on August 7, 2026.
 
 ## Registration Process
 

@@ -1,40 +1,35 @@
 # Introduction
 
-Counter API offers two versions of endpoints: v1 and v2, each with different capabilities and limits.
+Counter API offers a single, current version of endpoints: **v2**. The legacy v1 API has been deprecated and is no longer available as of **August 7, 2026**.
+
+!!! danger "V1 is deprecated"
+    As of **August 7, 2026**, the v1 API has been retired and no longer serves requests. All new and existing integrations must use the v2 API. See the [V1 Endpoints](endpoints/v1.md) page for migration notes.
 
 ## API Versions
 
-### V2 Endpoints (Recommended)
+### V2 Endpoints (Current)
 
-The v2 API is our premium offering with enhanced features and capabilities:
+The v2 API is our current and only supported offering, with enhanced features and capabilities:
 
 - **User Authentication**: Requires signup and login
 - **Private Counters**: Support for private counters that only you can access
-- **Superior Rate Limits**: 600 requests per minute per user (20x higher than v1)
+- **Superior Rate Limits**: 600 requests per minute per user
 - **API Base URL**: [https://api.counterapi.dev/v2](https://api.counterapi.dev/v2)
-- **Use Case**: Ideal for production applications, higher throughput needs, and private data
+- **Use Case**: Ideal for all applications, from simple public counters to production workloads requiring higher throughput and private data
 
-The v2 endpoints provide significantly more robust features for developers who need higher performance and private counter management. By requiring authentication, we can offer better security for your count data and much higher throughput for your applications.
+The v2 endpoints provide robust features for developers who need higher performance and private counter management. By requiring authentication, we can offer better security for your count data and much higher throughput for your applications.
 
-**We strongly recommend using v2 endpoints for all new projects.**
+**All projects, new and existing, must use v2 endpoints.**
 
-### V1 Endpoints (Legacy)
+### V1 Endpoints (Deprecated — No Longer Available)
 
-The v1 API is our original offering with the following limitations:
+The v1 API was our original offering, but it has been **deprecated and shut down as of August 7, 2026**. Requests to the v1 API base URL ([https://api.counterapi.dev/v1](https://api.counterapi.dev/v1)) will no longer succeed.
 
-- **Public Access**: No authentication required
-- **Restricted Rate Limits**: Limited to only 30 requests per minute per IP
-- **API Base URL**: [https://api.counterapi.dev/v1](https://api.counterapi.dev/v1)
-- **Use Case**: Simple projects, public counters, and basic applications
-
-The v1 endpoints do not require any authentication or authorization to use. This means that anyone who has access to the API can access and modify the count data stored in it. As a result, there is no need to use any token or password to access the API.
-
-This is a significant advantage for simple use cases, as it allows developers to easily integrate count data into their applications without the need for complex authentication and authorization systems.
+If you still have applications using v1, migrate them to the [V2 Endpoints](endpoints/v2.md) as soon as possible. See the [V1 Endpoints documentation](endpoints/v1.md) for migration guidance.
 
 ## Choosing the Right Version
 
-- Choose **v2** for most applications, especially those requiring private data, higher throughput, or that you plan to scale
-- Choose **v1** only if you need a simple, public counter with minimal requirements
+- Use **v2** — it is the only supported version for all applications, public or private, regardless of scale.
 
 For more information about rate limits, see our [Rate Limits](rate-limit.md) documentation.
 

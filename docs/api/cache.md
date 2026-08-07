@@ -1,11 +1,14 @@
 # Cache
 
-The Counter API incorporates a caching mechanism to deliver exceptionally fast response times. Caching is activated for the following API paths:
+The Counter API incorporates a caching mechanism to deliver exceptionally fast response times. Caching was activated for the following API paths:
 
 | Path                        |Caching| Duration     |
 |-----------------------------|---|--------------|
 | `/v1/:namespace/:name/`     |Yes| `10` minutes |
 | `/v1/:namespace/:name/list` |Yes| `24` hours   |
+
+!!! danger "V1 deprecated"
+    The paths above refer to the legacy **V1 API**, which was deprecated and shut down on **August 7, 2026**. V1 is no longer available — see the [V2 Endpoints](endpoints/v2.md) documentation for current usage.
 
 
 ## Why do we need caching?

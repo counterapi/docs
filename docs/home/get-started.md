@@ -17,7 +17,7 @@ The JavaScript library supports both browser and Node.js environments, making it
 - **Documentation**: [JavaScript Guide](../javascript/README.md)
 - **Features**:
   - Universal JavaScript support (Node.js, browser, ESM)
-  - Compatible with both v1 and v2 CounterAPI endpoints
+  - Compatible with v2 CounterAPI endpoints (the only available version — v1 was deprecated August 7, 2026)
   - TypeScript support
   - Promise-based API
   - Custom error handling
@@ -32,7 +32,7 @@ The Go library provides a native implementation for Go applications.
   - Native Go implementation
   - Thread-safe
   - Context support
-  - Support for both v1 and v2 API endpoints
+  - Support for v2 API endpoints (the only available version — v1 was deprecated August 7, 2026)
 
 ## Quick Start
 

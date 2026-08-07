@@ -2,7 +2,7 @@
 
 This page provides practical examples of how to use authentication with the CounterAPI JavaScript client.
 
-> **Note:** Authentication is only available with the V2 API. The legacy V1 API does not support authentication.
+> **Note:** Authentication is required for the V2 API, which is now the only available CounterAPI version. The legacy V1 API did not support authentication and was deprecated on August 7, 2026.
 
 ## Prerequisites
 

@@ -5,13 +5,13 @@ The CounterAPI JavaScript client is a lightweight, universal library that provid
 ## Features
 
 * **Universal JavaScript Support**: Works in Node.js, browsers, and supports ESM modules
-* **Version Support**: Compatible with both v1 and v2 CounterAPI endpoints
+* **Version Support**: Compatible with the v2 CounterAPI endpoints — the only version available since v1 was deprecated on August 7, 2026
 * **Promise-based API**: Modern asynchronous interface
 * **TypeScript Support**: Full type definitions included
 * **Error Handling**: Comprehensive error management
 * **Debugging Mode**: Optional logging for troubleshooting
 * **Lightweight**: Minimal footprint for your applications
-* **Authentication**: Secure your counters with API tokens (V2 API only)
+* **Authentication**: Secure your counters with API tokens
 
 ## Installation
 

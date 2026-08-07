@@ -31,7 +31,7 @@ Once the script is loaded, you can create a counter client:
 </script>
 ```
 
-> **Important:** The `accessToken` parameter is only available for the V2 API. Authentication is not supported in V1 API.
+> **Important:** As of **August 7, 2026**, the V2 API is the only available version — the legacy V1 API has been deprecated and no longer accepts requests.
 
 ## Simple Page View Counter
 
